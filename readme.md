@@ -2,6 +2,12 @@ Wordpress theme bootstrapper.
 
 ### Setting Up
 
+Setup using Composer:
+
+```
+composer create-project --stability=dev --repository-url=http://repository.usabilitydynamics.com UsabilityDynamics/wp-theme ./my-theme
+```
+
 Setup for theme development:
 ```
 composer install --prefer-dist

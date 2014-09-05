@@ -98,7 +98,6 @@
   },
   "scripts": {
     "pre-install-cmd": [
-      "unlink composer.lock",
       "npm install",
       "mkdir -p test/.tmp"
     ]

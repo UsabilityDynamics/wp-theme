@@ -1,0 +1,250 @@
+{
+  "usabilitydynamics/wp-theme": {
+    "master": {
+      "name": "usabilitydynamics/wp-theme",
+      "type": "wordpress-theme",
+      "minimum-stability": "dev",
+      "repositories": [
+        {
+          "type": "composer",
+          "url": "http://repository.usabilitydynamics.com"
+        },
+        {
+          "type":"composer",
+          "url":"http://wpackagist.org"
+        }
+      ],
+      "config": {
+        "preferred-install": "source",
+        "github-protocols": [ "ssh" ],
+        "vendor-dir": "vendor",
+        "component-dir": "static/public",
+        "component-baseurl": "theme/assets",
+        "modules-dir": "vendor/modules",
+        "bin-dir": "vendor/.bin",
+        "discard-changes": true,
+        "optimize-autoloader": true,
+        "component": {
+          "name": "wp-theme",
+          "main": "assets/scripts/app.js",
+          "baseUrl": "wp-content/themes/wp-theme/static/assets/scripts",
+          "deps": [ "app" ],
+          "uglify": {
+            "no_mangle": false
+          },
+          "scripts": [
+            "static/assets/scripts/app.js"
+          ],
+          "shim": {
+            "deps": ["jquery"]
+          },
+          "config": {
+            "applicationName": "wp-theme",
+            "color": "blue"
+          }
+        }
+      },
+      "require": {
+        "UsabilityDynamics/wp-amd": "master",
+        "UsabilityDynamics/wp-menufication": "master",
+        "UsabilityDynamics/lib-wp-shortcode": "master",
+        "usabilitydynamics/lib-wp-theme": "master",
+        "usabilitydynamics/lib-settings": "master",
+        "components/knockout": "3.1.0",
+        "components/fancybox2": "2.1.5",
+        "wpackagist/easy-responsive-carousel":"0.4.5",
+        "wpackagist/posts-to-posts":"1.4.*",
+        "robloach/component-installer": "*"
+      },
+      "require-dev": {
+        "composer/composer": "1.*",
+        "composer/installers": "v1.0.12"
+      },
+      "autoload": {
+        "autoload": {
+          "psr-0": {
+            "\\UsabilityDynamics\\WP_Theme": "lib"
+          }
+        }
+      },
+      "autoload-dev": {
+        "psr-4": {
+          "\\UsabilityDynamics\\WP_Theme\\Tests\\": "test/unit/php"
+        }
+      },
+      "extra": {
+        "installer-name": "wp-theme",
+        "installer-paths": {
+          "vendor/{$vendor}/{$name}": [
+            "type:wordpress-library"
+          ],
+          "lib/modules/{$name}": [
+            "type:wpackagist-plugin",
+            "type:wordpress-muplugin",
+            "type:wordpress-plugin",
+            "type:wordpress-module"
+          ],
+          "lib/themes/{$name}": [
+            "type:wpackagist-theme",
+            "type:wordpress-theme"
+          ]
+        }
+      },
+      "scripts": {
+        "pre-install-cmd": [
+          "unlink composer.lock",
+          "npm install",
+          "mkdir -p test/.tmp"
+        ]
+      },
+      "archive": {
+        "exclude": [
+          ".*",
+          "node_modules",
+          "static/scripts/src",
+          "static/styles/src",
+          ".gitignore",
+          "test",
+          "circle.yml",
+          "composer.lock",
+          "gruntfile.js",
+          "makefile",
+          "package.json"
+        ]
+      },
+      "version": "master",
+      "dist": {
+        "url": "https://github.com/usabilitydynamics/wp-theme/archive/master.zip",
+        "type": "zip"
+      },
+      "source": {
+        "url": "git@github.com:usabilitydynamics/wp-theme",
+        "type": "git",
+        "reference": "master"
+      }
+    },
+    "dev-master": {
+      "name": "usabilitydynamics/wp-theme",
+      "type": "wordpress-theme",
+      "minimum-stability": "dev",
+      "repositories": [
+        {
+          "type": "composer",
+          "url": "http://repository.usabilitydynamics.com"
+        },
+        {
+          "type":"composer",
+          "url":"http://wpackagist.org"
+        }
+      ],
+      "config": {
+        "preferred-install": "source",
+        "github-protocols": [ "ssh" ],
+        "vendor-dir": "vendor",
+        "component-dir": "static/public",
+        "component-baseurl": "theme/assets",
+        "modules-dir": "vendor/modules",
+        "bin-dir": "vendor/.bin",
+        "discard-changes": true,
+        "optimize-autoloader": true,
+        "component": {
+          "name": "wp-theme",
+          "main": "assets/scripts/app.js",
+          "baseUrl": "wp-content/themes/wp-theme/static/assets/scripts",
+          "deps": [ "app" ],
+          "uglify": {
+            "no_mangle": false
+          },
+          "scripts": [
+            "static/assets/scripts/app.js"
+          ],
+          "shim": {
+            "deps": ["jquery"]
+          },
+          "config": {
+            "applicationName": "wp-theme",
+            "color": "blue"
+          }
+        }
+      },
+      "require": {
+        "UsabilityDynamics/wp-amd": "master",
+        "UsabilityDynamics/wp-menufication": "master",
+        "UsabilityDynamics/lib-wp-shortcode": "master",
+        "usabilitydynamics/lib-wp-theme": "master",
+        "usabilitydynamics/lib-settings": "master",
+        "components/knockout": "3.1.0",
+        "components/fancybox2": "2.1.5",
+        "wpackagist/easy-responsive-carousel":"0.4.5",
+        "wpackagist/posts-to-posts":"1.4.*",
+        "robloach/component-installer": "*"
+      },
+      "require-dev": {
+        "composer/composer": "1.*",
+        "composer/installers": "v1.0.12"
+      },
+      "autoload": {
+        "autoload": {
+          "psr-0": {
+            "\\UsabilityDynamics\\WP_Theme": "lib"
+          }
+        }
+      },
+      "autoload-dev": {
+        "psr-4": {
+          "\\UsabilityDynamics\\WP_Theme\\Tests\\": "test/unit/php"
+        }
+      },
+      "extra": {
+        "installer-name": "wp-theme",
+        "installer-paths": {
+          "vendor/{$vendor}/{$name}": [
+            "type:wordpress-library"
+          ],
+          "lib/modules/{$name}": [
+            "type:wpackagist-plugin",
+            "type:wordpress-muplugin",
+            "type:wordpress-plugin",
+            "type:wordpress-module"
+          ],
+          "lib/themes/{$name}": [
+            "type:wpackagist-theme",
+            "type:wordpress-theme"
+          ]
+        }
+      },
+      "scripts": {
+        "pre-install-cmd": [
+          "unlink composer.lock",
+          "npm install",
+          "mkdir -p test/.tmp"
+        ]
+      },
+      "archive": {
+        "exclude": [
+          ".*",
+          "node_modules",
+          "static/scripts/src",
+          "static/styles/src",
+          ".gitignore",
+          "test",
+          "circle.yml",
+          "composer.lock",
+          "gruntfile.js",
+          "makefile",
+          "package.json"
+        ]
+      },
+      "version": "master",
+      "dist": {
+        "url": "https://github.com/usabilitydynamics/wp-theme/archive/develop.zip",
+        "type": "zip"
+      },
+      "source": {
+        "url": "git@github.com:usabilitydynamics/wp-theme",
+        "type": "git",
+        "reference": "develop"
+      }
+    }
+  }
+}
