@@ -5,16 +5,36 @@ Wordpress theme bootstrapper.
 Setup using Composer:
 
 ```
-composer create-project --stability=dev --repository-url=http://repository.usabilitydynamics.com UsabilityDynamics/wp-theme ./my-theme
+composer create-project \
+  --stability=dev \
+  --repository-url=http://repository.usabilitydynamics.com \
+  UsabilityDynamics/wp-theme ./my-awesome-theme
 ```
 
-Setup for theme development:
+After creating the project you could change the Git origin to your origin:
 ```
-composer install --prefer-dist
+cd my-awesome-theme
+git remote rename origin source
+git remote add origin https://github.com/YourOrganization/my-awesome-theme.git
+git push origin master
 ```
 
-Setup for dependency development:
+Or, duplicate repository:
+
 ```
+mkdir my-awesome-theme
+my-awesome-theme
+git init
+git remote add origin https://github.com/YourOrganization/my-awesome-theme.git
+git remote add source https://github.com/usabilitydynamics/wp-theme.git
+git fetch source
+git pull source master
+git push origin master
+```
+
+Or, fork this repository and then clone it locally
+```
+git clone git@github.com:YourOrganization/wp-theme.git
 composer install --prefer-source
 ```
 

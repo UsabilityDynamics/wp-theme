@@ -90,13 +90,6 @@
           ]
         }
       },
-      "scripts": {
-        "pre-install-cmd": [
-          "unlink composer.lock",
-          "npm install",
-          "mkdir -p test/.tmp"
-        ]
-      },
       "archive": {
         "exclude": [
           ".*",
@@ -212,13 +205,6 @@
             "type:wordpress-theme"
           ]
         }
-      },
-      "scripts": {
-        "pre-install-cmd": [
-          "unlink composer.lock",
-          "npm install",
-          "mkdir -p test/.tmp"
-        ]
       },
       "archive": {
         "exclude": [

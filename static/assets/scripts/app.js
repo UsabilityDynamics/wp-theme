@@ -1,1 +1,1 @@
-define("app",["jquery"],function(jQuery,async){console.log("app loaded");require(["sample"])});
+define("app",["jquery"],function(){console.log("app loaded"),require(["sample"])});

@@ -32,12 +32,12 @@ module.exports = function( grunt ) {
           yuicompress: true,
           relativeUrls: true,
           paths: [
-            'static/styles/src'
+            'static/assets/styles/src'
           ]
         },
         files: {
-          'static/styles/app.css' : [
-            'static/styles/src/app.less'
+          'static/assets/styles/app.css' : [
+            'static/assets/styles/src/app.less'
           ]
         }
       },
@@ -46,13 +46,42 @@ module.exports = function( grunt ) {
           yuicompress: false,
           relativeUrls: true,
           paths: [
-            'static/styles/src'
+            'static/assets/styles/src'
           ]
         },
         files: {
-          'static/styles/app.css' : [
-            'static/styles/src/app.less'
+          'static/assets/styles/app.css' : [
+            'static/assets/styles/src/app.less'
           ]
+        }
+      }
+    },
+
+    uglify: {
+      dev: {
+        options: {
+          beautify: true,
+          mangle: {
+            except: ['jQuery' ]
+          }
+        },
+        files: {
+          'static/assets/scripts/app.js': ['static/assets/scripts/src/app.js']
+        }
+      },
+      build: {
+        options: {
+          preserveComments: false,
+          compress: {
+            drop_console: true
+          },
+          beautify: false,
+          mangle: {
+            except: ['jQuery' ]
+          }
+        },
+        files: {
+          'static/assets/scripts/app.js': ['static/assets/scripts/src/app.js']
         }
       }
     },
@@ -74,16 +103,14 @@ module.exports = function( grunt ) {
         debounceDelay: 500
       },
       styles: {
-        files: [ 'gruntfile.js', 'static/styles/src/*', 'static/styles/src/colors/*' ],
+        files: [ 'gruntfile.js', 'static/assets/styles/src/*', 'static/assets/styles/src/colors/*' ],
         tasks: [ 'less' ]
       },
       scripts: {
         files: [
           'gruntfile.js',
           'composer.json',
-          'static/scripts/src/*.js',
-          'static/scripts/src/lib/*.js',
-          'static/scripts/src/components/*.js'
+          'static/assets/scripts/src/*.js'
         ],
         tasks: [ 'requirejs' ]
       },
@@ -113,7 +140,7 @@ module.exports = function( grunt ) {
         url: '<%= composer.author.url %>',
         logo: 'http://media.usabilitydynamics.com/logo.png',
         options: {
-          paths: './',
+          paths: './lib',
           outdir: 'static/codex'
         }
       }
@@ -127,6 +154,7 @@ module.exports = function( grunt ) {
   ]);
 
   grunt.registerTask('dev', [
+    'uglify',
     'yuidoc'
   ]);
 
