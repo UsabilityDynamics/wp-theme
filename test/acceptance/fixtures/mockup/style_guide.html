@@ -1,0 +1,2543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap Theme by @Graphikaria</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/theme.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/prism.css">
+	<link rel="stylesheet" href="assets/css/prism-line-numbers.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+	<style>
+		/*for demo purposes only*/
+		code {
+			white-space: pre-wrap;
+			white-space: -moz-pre-wrap;
+			white-space: -pre-wrap;
+			white-space: -o-pre-wrap;
+			word-wrap: break-word;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Main Navbar -->
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/img/logo-light.png" alt="Website Logo"> Style Guide
+				</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-main-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html"><i class="fa fa-arrow-left"></i> Back to index</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container -->
+	</nav><!-- /.navbar -->
+
+	<!-- Carousel -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h2>Carousel</h2>
+					<p>Reference: <a href="http://getbootstrap.com/javascript/#carousel" target="_blank">Bootstrap carousel</a></p>
+					<hr>
+					<p><span class="label label-danger">Note:</span> When no additional information is provided refer to Bootstrap defaults.</p>
+				</div><!-- /.col -->
+				<div class="col-md-9">
+					<!-- Carousel -->
+					<div id="my-carousel" class="carousel slide no-margin-bottom">
+						<!-- indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#my-carousel" data-slide-to="1"></li>
+						</ol>
+						<!-- carousel -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<img class="img-responsive" data-src="holder.js/1200x500/#24292f:#24292f/atuto/" alt="img">
+								<div class="carousel-caption visible-lg">
+									<h1>Bootstrap Framework Overhauled<br> Meet the new sexy</h1>
+									<p class="lead">Beautifull Bootstrap skin with overhauled components.</p><br>
+								</div>
+							</div><!-- /.item -->
+							<div class="item">
+								<img class="img-responsive" data-src="holder.js/1200x500/#24292f:#24292f/atuto/" alt="img">
+								<div class="carousel-caption visible-lg">
+									<h1>We help you being awesome at what you really do</h1>
+									<p class="lead">Providing the best service so you can concentrate on your thing</p>
+								</div>
+							</div><!-- /.item -->
+						</div><!-- /.carousel-inner -->
+						<!-- Controls -->
+						<a class="left carousel-control" href="#my-carousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#my-carousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div><!-- /.carousel -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Sectioning -->
+	<section class="wrapper-sm">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Full width sections <span class="text-muted">+ Modifiers</span>:</h2>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<section class="wrapper-lg bg-highlight">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>Section <span class="text-muted">+ wrapper + background</span></h3>
+					<p>Create a section and add modifiers.</p>
+					<p><code>section.wrapper-lg.bg-highlight</code></p>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<section class="wrapper-md bg-info">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>Section <span class="text-muted">+ wrapper + background</span></h3>
+					<p>Create a section and add modifiers.</p>
+					<p><code>section.wrapper-md.bg-info</code></p>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<section class="wrapper-sm bg-primary">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>Section <span class="text-muted">+ wrapper + background</span></h3>
+					<p>Create a section and add modifiers.</p>
+					<p><code>section.wrapper-sm.bg-primary</code></p>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<section class="wrapper-sm bg-secondary">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>Section <span class="text-muted">+ wrapper + background</span></h3>
+					<p>Create a section and add modifiers.</p>
+					<p><code>section.wrapper-sm.bg-secondary</code></p>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<section class="wrapper-sm bg-danger">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>Section <span class="text-muted">+ wrapper + background</span></h3>
+					<p>Create a section and add modifiers.</p>
+					<p><code>section.wrapper-sm.bg-danger</code></p>
+					<hr>
+					<p><span class="label label-info">Heads up:</span> Create more variations or instances following the provided mixin pattern.</p>
+					<p><span class="label label-info">Heads up:</span> Text inside <code>bg-*</code> may require the use of empahsis classes <code>.text-*</code> to style font colors.</p>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Typography -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<h2>Typography</h2>
+			<p>Reference: <a href="http://getbootstrap.com/css/#type" target="_blank">Bootstrap typography</a></p>
+			<hr>
+			<div class="row">
+				<div class="col-md-12 col-lg-4">
+					<h1><code>.h1</code> Boot Heading</h1>
+					<h2><code>.h2</code> Bootstrap Heading</h2>
+					<h3><code>.h3</code> Bootstrap Heading</h3>
+					<h4><code>.h4</code> Bootstrap Heading</h4>
+					<h5><code>.h5</code> Bootstrap Heading</h5>
+					<h6><code>.h6</code> Bootstrap Heading</h6>
+				</div><!-- /.col -->
+				<div class="col-md-12 col-lg-4">
+					<h3>Body copy</h3>
+					<p class="lead"><code>.lead</code> Lead text</p>
+					<p><code>&lt;p&gt;</code>Cardinal covetous comparable orca far sneered much a under on when therefore augustly slew wildebeest oh vehement kiwi adoringly contrary obedient up gosh specially yikes far bluebird disagreeably beside much spluttered and nonsensical tortoise loyally blushed pushed spun.<code>&lt;/p&gt;</code></p>
+					<hr>
+					<p>
+						<code>&lt;small&gt;</code> <small>Small text</small>,<br>
+						<code>&lt;strong&gt;</code> <strong>Strong text</strong>,<br>
+						<code>&lt;em&gt;</code> <em>Emphasis text</em>.
+					</p>
+				</div><!-- /.col -->
+				<div class="col-md-12 col-lg-4">
+					<h3>Emphasis classes</h3>
+					<h5 class="heading-default">Default heading <code>h1.heading-default</code></h5>
+					<p class="text-default">Default text <code>p.text-default</code></p>
+					<p class="text-muted">Muted text <code>p.text-muted</code></p>
+					<p class="text-primary">Primary text <code>p.text-primary</code></p>
+					<p class="text-success">Success text <code>p.text-suceess</code></p>
+					<p class="text-info">Info text <code>p.text-info</code></p>
+					<p class="text-warning">Warning text <code>p.text-warning</code></p>
+					<p class="text-danger">Danger text <code>p.text-danger</code></p>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Page header -->
+	<section class="wrapper-lg bg-highlight">
+		<div class="container">
+					<h2>Page header + Headline</h2>
+					<p>Reference: <a href="http://getbootstrap.com/components/#page-header">Bootstrap Header</a></p>
+			<div class="row">
+				<div class="col-md-6">
+					<p><code>h1.page-header</code></p>
+					<div class="page-header">
+						<h1>Page header <small>Small Text</small></h1>
+					</div>
+				</div><!-- /.col -->
+				<div class="col-md-6">
+					<p><code>h1.headline</code></p>
+					<h1 class="headline">Headline</h1>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Lists -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<h2>Lists</h2>
+			<div class="row">
+				<div class="col-md-3">
+					<p><strong>Unordered list:</strong> <code>ul>li</code></p>
+					<ul>
+						<li>List item</li>
+						<li>List item</li>
+						<li>List item</li>
+					</ul>
+					<p><strong>Ordered list:</strong> <code>ol>li</code></p>
+					<ol>
+						<li>List item</li>
+						<li>List item</li>
+						<li>List item</li>
+					</ol>
+					<p><strong>Unstyled list:</strong><br> <code>ul.list-unstyled>li</code></p>
+					<ul class="list-unstyled">
+						<li>List item</li>
+						<li>List item</li>
+						<li>List item</li>
+					</ul>
+					<p><strong>Inline list:</strong><br> <code>ul.list-inline>li</code></p>
+					<ul class="list-inline">
+						<li>List item</li>
+						<li>List item</li>
+						<li>List item</li>
+					</ul>
+				</div><!-- /.col -->
+				<div class="col-md-3">
+					<p><strong>Tags:</strong><br> <code>ul.tags>(li.active>a)+(li>a)</code></p>
+					<ul class="tags">
+						<li class="active"><a href="#link">All</a></li>
+						<li><a href="#link">design</a></li>
+						<li><a href="#link">layout</a></li>
+						<li><a href="#link">stack</a></li>
+						<li><a href="#link">PSD</a></li>
+						<li><a href="#link">bootstrap</a></li>
+						<li><a href="#link">menu</a></li>
+						<li><a href="#link">type</a></li>
+						<li><a href="#link">paper</a></li>
+						<li><a href="#link">press</a></li>
+					</ul>
+					<br class="spacer-lg">
+				</div><!-- /.col -->
+				<div class="col-md-3">
+					<p><strong>Image Stream:</strong><br> <code>ul.img-stream>li>img</code></p>
+					<ul class="img-stream">
+						<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+						<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+						<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+						<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+						<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+						<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+						<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+						<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+					</ul>
+				</div><!-- /.col -->
+				<div class="col-md-3">
+					<p><strong>Social Networks:</strong><br> <code>ul.social-networks>li>a.btn.btn-twitter>i.fa.fa-fw.fa-twitter</code></p>
+					<ul class="social-networks">
+						<li><a class="btn btn-twitter" href="#link"><i class="fa fa-fw fa-twitter"></i></a></li>
+						<li><a class="btn btn-facebook" href="#link"><i class="fa fa-fw fa-facebook"></i></a></li>
+						<li><a class="btn btn-google-plus" href="#link"><i class="fa fa-fw fa-google-plus"></i></a></li>
+						<li><a class="btn btn-pinterest" href="#link"><i class="fa fa-fw fa-pinterest"></i></a></li>
+						<li><a class="btn btn-linkedin" href="#link"><i class="fa fa-fw fa-linkedin"></i></a></li>
+						<li><a class="btn btn-youtube" href="#link"><i class="fa fa-fw fa-youtube"></i></a></li>
+						<li><a class="btn btn-vimeo" href="#link"><i class="fa fa-fw fa-vimeo-square"></i></a></li>
+						<li><a class="btn btn-tumblr" href="#link"><i class="fa fa-fw fa-tumblr"></i></a></li>
+						<li><a class="btn btn-instagram" href="#link"><i class="fa fa-fw fa-instagram"></i></a></li>
+						<li><a class="btn btn-flickr" href="#link"><i class="fa fa-fw fa-flickr"></i></a></li>
+						<li><a class="btn btn-dribbble" href="#link"><i class="fa fa-fw fa-dribbble"></i></a></li>
+						<li><a class="btn btn-foursquare" href="#link"><i class="fa fa-fw fa-foursquare"></i></a></li>
+						<li><a class="btn btn-vk" href="#link"><i class="fa fa-fw fa-vk"></i></a></li>
+					</ul>
+					<br>
+					<p><span class="label label-info">Heads up:</span> Create more variations or instances following the provided mixin pattern. Just ensure there's a font glyph available to drop in.</p>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Blockquotes -->
+	<section class="wrapper-lg bg-highlight">
+		<div class="container">
+			<h2>Blockquotes <span class="text-muted">with optional author avatar</span></h2>
+			<hr>
+			<div class="row">
+				<div class="col-lg-4">
+					<p class="lead">Default tag:</p>
+					<p><code>.blockquote-default</code></p>
+					<blockquote class="blockquote-default">
+						<p>Those who say “it’s not personal, it’s just business” are lying. All business is personal, and the best business is very personal.</p>
+						<img class="quote-author" data-src="holder.js/40x40/auto" alt="img">
+						<footer>
+							<small><cite>Cooper Black<br> Chicago, Illinois USA</cite></small>
+						</footer>
+					</blockquote>
+				</div><!-- /.col -->
+				<div class="col-lg-4">
+					<p class="lead">Primary class:</p>
+					<p><code>.blockquote-primary</code></p>
+					<blockquote class="blockquote-primary">
+						<p>Those who say “it’s not personal, it’s just business” are lying. All business is personal, and the best business is very personal.</p>
+						<img class="quote-author" data-src="holder.js/40x40/auto" alt="img">
+						<footer>
+							<small><cite>Gill Sans<br> West Sussex, England</cite></small>
+						</footer>
+					</blockquote>
+				</div><!-- /.col -->
+				<div class="col-lg-4">
+					<p class="lead">Secondary class:</p>
+					<p><code>.blockquote-secondary</code></p>
+					<blockquote class="blockquote-secondary">
+						<p>Those who say “it’s not personal, it’s just business” are lying. All business is personal, and the best business is very personal.</p>
+						<img class="quote-author" data-src="holder.js/40x40/auto" alt="img">
+						<footer>
+							<small><cite>Calisto MT<br> London, England</cite></small>
+						</footer>
+					</blockquote>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Code Highlighting -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<h2>Code Highlighting</h2>
+			<hr>
+			<div class="row">
+				<div class="col-lg-6">
+					<h3>The Bootsrap way</h3>
+					<p>Nothing new here.</p>
+					<hr>
+					<h4>Inline</h4>
+					<p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
+					<p>Output example: <code>&lt;p&gt;Lorem ipsum bootstrap&lt;/p&gt;</code></p>
+					<hr>
+					<h4>Code blocks</h4>
+					<p>Or use <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code> to get code blocks:</p>
+<pre><code>&lt;!-- The usual Bootstrap files --&gt;
+&lt;head&gt;
+  &lt;link href="assets/css/bootstrap.css" rel="stylesheet" /&gt;
+  &lt;script src="assets/js/bootstrap.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;!-- Wrap your code --&gt;
+&lt;body&gt;
+  &lt;pre&gt;
+    &lt;code&gt;
+      &lt;p&gt;Lorem ipsum bootstrap&lt;/p&gt;
+    &lt;/code&gt;
+  &lt;/pre&gt;
+&lt;/body&gt;</code></pre>
+				</div>
+				<div class="col-lg-6">
+					<h3>The Prism JS way</h3>
+					<p>Let's go the hipster way with <a href="http://prismjs.com" target="_blank"><span class="glyphicon glyphicon-link"></span> Prism JS</a></p>
+					<hr>
+					<h4>Inline</h4>
+					<p>Wrap inline snippets of code with <code>&lt;code class="language-markup"&gt;</code>.</p>
+					<p>Output example: <code class="language-markup">&lt;p&gt;Lorem ipsum bootstrap&lt;/p&gt;</code></p>
+					<hr>
+					<h4>Code blocks</h4>
+					<p>Or use <code>&lt;pre&gt;</code> and <code>&lt;code class="language-markup"&gt;</code> to get code blocks:</p>
+<pre class="line-numbers"><code class="language-markup">&lt;!-- Load prism.js and any of its css themes --&gt;
+&lt;head&gt;
+	&lt;link href="assets/css/prism.css" rel="stylesheet" /&gt;
+	&lt;link href="assets/css/prism-line-numbers.css" rel="stylesheet" /&gt;
+	&lt;script src="assets/js/prism.js"&gt;&lt;/script&gt;
+	&lt;script src="assets/js/prism-line-numbers.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;!-- Wrap your code --&gt;
+&lt;body&gt;
+	&lt;pre class="line-numbers"&gt;
+		&lt;code class="language-markup"&gt;
+			&lt;p&gt;Lorem ipsum bootstrap&lt;/p&gt;
+		&lt;/code&gt;
+	&lt;/pre&gt;
+&lt;/body&gt;</code></pre>
+					<p><span class="label label-info">Heads up:</span> Only one Prism theme (<a href="http://prismjs.com/download.html" target="_blank">Default</a>) and one plugin (<a href="http://prismjs.com/plugins/line-numbers/" target="_blank">Line Numbers</a>) are included, more features are available at <a href="http://prismjs.com">www.prismjs.com</a>, download a custom set and raplace the current files.</p>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Tables -->
+	<section class="wrapper-lg bg-highlight">
+		<div class="container">
+			<h2>Tables</h2>
+			<p class="lead">Easier to read tables</p>
+			<hr>
+			<div class="row">
+				<div class="col-lg-6">
+					<h3>Basic striped tables</h3>
+					<p><code>.table .table-striped</code></p>
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Username</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Larry</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr>
+					<h3>Striped and bordered</h3>
+					<p><code>.table .table-striped .table-bordered</code></p>
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Username</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Larry</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr>
+				</div><!-- /.col -->
+
+				<div class="col-lg-6">
+					<h3>Striped and bordered with hover effect</h3>
+					<p><code>.table .table-bordered .table-hover</code></p>
+					<table class="table table-bordered table-hover">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Username</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Larry</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr>
+					<h3>Contextual classes</h3>
+					<p>Use state classes on rows or cells (td & th) <code>.active</code> <code>.success</code> <code>.warning</code> <code>.danger</code></p>
+					<table class="table table-bordered table-hover">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Username</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="active">
+								<td>1</td>
+								<td>Active</td>
+								<td>...</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>...</td>
+								<td>...</td>
+								<td>...</td>
+							</tr>
+							<tr class="success">
+								<td>3</td>
+								<td>Success</td>
+								<td>...</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>...</td>
+								<td>...</td>
+								<td>...</td>
+							</tr>
+							<tr class="warning">
+								<td>4</td>
+								<td>Warning</td>
+								<td>...</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>...</td>
+								<td>...</td>
+								<td>...</td>
+							</tr>
+							<tr class="danger">
+								<td>6</td>
+								<td>Danger</td>
+								<td>...</td>
+								<td>...</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Forms -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<h2>Forms</h2>
+			<p>Reference: <a href="http://getbootstrap.com/css/#forms" target="_blank">Bootstrap forms</a></p>
+			<hr>
+			<div class="row">
+				<div class="col-lg-6">
+					<h3>Basic form</h3>
+					<form role="form">
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputFile">File input</label>
+							<input type="file" id="exampleInputFile">
+							<p class="help-block">Example block-level help text here.</p>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Check me out
+							</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div><!-- /.col -->
+
+				<div class="col-lg-3">
+					<h3>Checkbox</h3>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="" checked="">
+							Checked
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="">
+							Unchecked
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="" disabled="">
+							Disabled
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="" disabled="" checked="">
+							Disabled Checked
+						</label>
+					</div>
+					<br>
+					<label class="checkbox-inline">
+						<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+					</label>
+					<label class="checkbox-inline">
+						<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+					</label>
+					<label class="checkbox-inline">
+						<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+					</label>
+					<hr>
+
+					<h3>Radio</h3>
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+							Checked 
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+							Unchecked 
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+							Disabled 
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadios2" id="optionsRadios4" value="option4" disabled="" checked="">
+							Disabled Checked 
+						</label>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<h3>Select</h3>
+					<select class="form-control">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+					<br>
+
+					<p class="lead">Multiple Select</p>
+					<select multiple="" class="form-control">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+					</select>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+			<br class="spacer-lg">
+
+			<div class="row">
+				<div class="col-lg-6">
+					<h3>Inline form</h3>
+					<form class="form-inline" role="form">
+						<div class="form-group">
+							<label class="sr-only" for="exampleInputEmail2">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="exampleInputPassword2">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Remember me
+							</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Sign in</button>
+					</form>
+				</div>
+				<div class="col-lg-6">
+					<h3>Disabled fields</h3>
+					<form class="form-inline" role="form">
+						<fieldset disabled>
+							<div class="form-group">
+								<label for="disabledTextInput" class="sr-only">Disabled input</label>
+								<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+							</div>
+							<div class="form-group">
+								<label for="disabledSelect" class="sr-only">Disabled select menu</label>
+								<select id="disabledSelect" class="form-control">
+									<option>Disabled select</option>
+								</select>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Can't check this
+								</label>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</fieldset>
+					</form>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+			<hr>
+
+			<h3>Validation states</h3>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="form-group has-success">
+						<label class="control-label" for="inputSuccess">Input with success</label>
+						<input type="text" class="form-control" id="inputSuccess">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="form-group has-warning">
+						<label class="control-label" for="inputWarning">Input with warning</label>
+						<input type="text" class="form-control" id="inputWarning">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="form-group has-error">
+						<label class="control-label" for="inputError">Input with error</label>
+						<input type="text" class="form-control" id="inputError">
+					</div>
+				</div>
+			</div><!-- /.row -->
+			<hr>
+
+			<h3>Input groups &amp; Addons</h3>
+			<div class="row">
+				<div class="col-lg-4">
+					<!-- Basic -->
+					<p class="lead">Basic addon</p>
+					<div class="input-group">
+						<span class="input-group-addon">Your</span>
+						<input type="text" class="form-control" placeholder="Username">
+					</div>
+					<br>
+					<!-- Button -->
+					<p class="lead">Button addon</p>
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-primary" tabindex="-1">Action</button>
+						</div>
+						<input type="text" class="form-control" placeholder="Username">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<!-- Checkbox -->
+					<p class="lead">Checkbox addon</p>
+					<div class="input-group">
+						<span class="input-group-addon">
+							<input type="checkbox">
+						</span>
+						<input type="text" class="form-control">
+					</div>
+					<br>
+					<!-- Button with dropdown -->
+					<p class="lead">Button &amp; dropdown</p>
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div>
+						<input type="text" class="form-control">
+					</div>
+				</div><!-- /.col -->
+				<div class="col-lg-4">
+					<!-- Radio -->
+					<p class="lead">Radio addon</p>
+					<div class="input-group">
+						<span class="input-group-addon">
+							<input type="radio">
+						</span>
+						<input type="text" class="form-control">
+					</div>
+					<br>
+					<!-- Segmented buttons -->
+					<p class="lead">Segmented buttons</p>
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-primary" tabindex="-1">Action</button>
+							<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu pull-right" role="menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div>
+						<input type="text" class="form-control">
+					</div><!-- /.input-group -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Buttons -->
+	<section class="wrapper-lg bg-highlight">
+		<div class="container">
+			<h2>Buttons</h2>
+			<p>Reference: <a href="http://getbootstrap.com/css/#buttons" target="_blank">Bootstrap buttons</a></p>
+			<hr>
+			<div class="row">
+				<div class="col-lg-6">
+					<p class="lead">Optional <strong class="text-info">shadow</strong> and <strong class="text-info">border radius</strong> via LESS</p>
+					<p>
+						<button class="btn btn-default">Default</button>
+						<button class="btn btn-primary">Primary</button>
+						<button class="btn btn-success">Success</button>
+						<button class="btn btn-info">Info</button>
+						<button class="btn btn-warning">Warning</button>
+						<button class="btn btn-danger">Danger</button>
+						<button class="btn btn-link">Link</button>
+					</p>
+					<p>
+						<button class="btn disabled btn-default">Default</button>
+						<button class="btn disabled btn-primary">Primary</button>
+						<button class="btn disabled btn-success">Success</button>
+						<button class="btn disabled btn-info">Info</button>
+						<button class="btn disabled btn-warning">Warning</button>
+						<button class="btn disabled btn-danger">Danger</button>
+						<button class="btn disabled btn-link">Link</button>
+					</p>
+					<hr>
+					<!-- groups -->
+					<p class="lead">Grouped buttons &amp; Dropdown menus</p>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default">Left</button>
+						<button type="button" class="btn btn-default">Middle</button>
+						<button type="button" class="btn btn-default">Right</button>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn-primary">1</button>
+						<div class="btn-group">
+							<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+								Dropdown
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Dropdown link</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Dropdown header</li>
+								<li><a href="#">Dropdown link</a></li>
+								<li><a href="#">Dropdown link</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="btn-group dropup">
+						<button type="button" class="btn btn-danger">2</button>
+						<div class="btn-group">
+							<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+								Dropdup
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Dropdown link</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Dropdown header</li>
+								<li><a href="#">Dropdown link</a></li>
+								<li><a href="#">Dropdown link</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr>
+					<p class="lead">Button groups &amp; Glyphicons</p>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default">Glyphs:</button>
+						<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-briefcase"></span></button>
+						<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-bullhorn"></span></button>
+						<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-calendar"></span></button>
+						<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-camera"></span></button>
+						<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-cloud"></span></button>
+					</div>
+					<hr>
+					<p class="lead">Justified anchor links</p>
+					<div class="btn-group btn-group-justified">
+						<a class="btn btn-default">Lorem</a>
+						<a class="btn btn-default">Ipsum</a>
+						<a class="btn btn-default">Bootstrap</a>
+					</div>
+				</div><!-- /.col -->
+				<div class="col-lg-6">
+					<p class="lead">Button sizes</p>
+					<p>
+						<button type="button" class="btn btn-primary btn-lg">Large button</button>
+						<button type="button" class="btn btn-default btn-lg">Large button</button>
+					</p>
+					<p>
+						<button type="button" class="btn btn-primary">Default button</button>
+						<button type="button" class="btn btn-default">Default button</button>
+					</p>
+					<p>
+						<button type="button" class="btn btn-primary btn-sm">Small button</button>
+						<button type="button" class="btn btn-default btn-sm">Small button</button>
+					</p>
+					<p>
+						<button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+						<button type="button" class="btn btn-default btn-xs">Extra small button</button>
+					</p>
+					<p class="lead">Block level</p>
+					<p>
+						<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+						<button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+					</p>
+
+					<p class="lead">Vertigal groups</p>
+					<div class="btn-group-vertical">
+						<button type="button" class="btn btn-primary">Button</button>
+						<div class="btn-group"> <!-- open -->
+							<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+								Dropdown
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Dropdown link</a></li>
+								<li><a href="#">Dropdown link</a></li>
+							</ul>
+						</div><!-- /.btn-group -->
+						<button type="button" class="btn btn-primary">Button</button>
+						<div class="btn-group"> <!-- open -->
+							<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+								Dropdown
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Dropdown link</a></li>
+								<li><a href="#">Dropdown link</a></li>
+							</ul>
+						</div><!-- /.btn-group -->
+					</div><!-- /.btn-group-vertical -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Images -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<h2>Images</h2>
+			<p>Reference: <a href="http://getbootstrap.com/css/#images" target="_blank">Bootstrap Images</a></p>
+			<div class="row">
+				<div class="col-lg-4">
+					<p><code>img.img-rounded</code></p>
+					<p><img class="img-rounded img-responsive" data-src="holder.js/600x600/#2A2F37:#99aaaa/auto/" alt="img"></p>
+				</div><!-- /.col -->
+				<div class="col-lg-4">
+					<p><code>img.img-circle</code></p>
+					<p><img class="img-circle img-responsive" data-src="holder.js/600x600/#2A2F37:#99aaaa/auto/" alt="img"></p>
+				</div><!-- /.col -->
+				<div class="col-lg-4">
+					<p><code>img.img-thumbnail</code></p>
+					<p><img class="img-thumbnail img-responsive" data-src="holder.js/600x600/#2A2F37:#99aaaa/auto/" alt="img"></p>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Navs -->
+	<section class="wrapper-lg bg-highlight">
+		<div class="container">
+			<h2>Navs</h2>
+			<p>Reference: <a href="http://getbootstrap.com/components/#nav" target="_blank">Bootstrap navs</a></p>
+			<p class="lead">Nav Tabs</p>
+			<div class="row">
+				<div class="col-lg-6">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab-1" data-toggle="tab">Home</a></li>
+						<li><a href="#tab-2" data-toggle="tab">Profile</a></li>
+						<li><a href="#tab-3" data-toggle="tab">Messages</a></li>
+						<li class="dropdown">
+							<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+								<li><a href="#tab-4" tabindex="-1" data-toggle="tab">Inner tab</a></li>
+								<li><a href="#tab-5" tabindex="-1" data-toggle="tab">Inner tab 2</a></li>
+								<li class="divider"></li>
+								<li class="disabled"><a href="#link">Disabled link</a></li>
+							</ul>
+						</li>
+						<li class="disabled"><a href="#">Disabled</a></li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade active in" id="tab-1">
+							<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+						</div>
+						<div class="tab-pane fade" id="tab-2">
+							<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+						</div>
+						<div class="tab-pane fade" id="tab-3">
+							<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+						</div>
+						<div class="tab-pane fade" id="tab-4">
+							<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+						</div>
+						<div class="tab-pane fade" id="tab-5">
+							<p>Lorem ipsum dolor sitamet, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<p class="lead">Nav Pills stacked</p>
+					<ul class="nav nav-pills nav-stacked">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Messages</a></li>
+						<li class="disabled"><a href="#">Disabled</a></li>
+					</ul>
+				</div>
+			</div><!-- /.row -->
+			<br>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead">Nav Pills</p>
+					<ul class="nav nav-pills">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Messages</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								Dropdown <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</li>
+						<li class="disabled"><a href="#">Disabled</a></li>
+					</ul>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Navbar -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>Navbar with Logo</h2>
+					<p>Reference: <a href="http://getbootstrap.com/components/#navbar" target="_blank">Bootstrap navbar</a></p>
+					<p><span class="label label-info">Heads up:</span> Logo must be 50px height (any width).</p>
+					<br class="spacer-lg">
+
+					<p class="lead">Navbar Default</p>
+					<!-- Navbar Default -->
+					<nav class="navbar navbar-default" role="navigation">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#"><img src="holder.js/100x50/auto/text:50x100" alt="Website Logo"></a>
+						</div><!-- /.navbar-header -->
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li class="divider"></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search">
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+							<p class="navbar-text">Signed in as Mark Otto</p>
+							<button type="button" class="btn btn-default navbar-btn">Sign in</button>
+						</div><!-- /.navbar-collapse -->
+					</nav><!-- /.navbar -->
+
+					<p class="lead">Navbar Inverse</p>
+					<!-- Navbar Inverse -->
+					<nav class="navbar navbar-inverse" role="navigation">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#"><img src="holder.js/100x50/auto/text:50x100" alt="Website Logo"></a>
+						</div><!-- /.navbar-header -->
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li class="divider"></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search">
+								</div>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+							<p class="navbar-text">Signed in as Mark Otto</p>
+							<button type="button" class="btn btn-primary navbar-btn">Sign in</button>
+						</div><!-- /.navbar-collapse -->
+					</nav><!-- /.navbar -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Breadcrumbs -->
+	<section class="wrapper-lg bg-highlight">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>Breadcrumbs</h2>
+					<p>Reference: <a href="http://getbootstrap.com/components/#breadcrumbs" target="_blank">Bootstrap Breadcrumbs</a></p>
+					<p><code>ol.breadcrumb>(li>a)+(li>a)+(li.active>a)</code></p>
+					<ol class="breadcrumb">
+						<li class="active">Home</li>
+					</ol>
+					<ol class="breadcrumb">
+						<li><a href="#">Home</a></li>
+						<li class="active">Library</li>
+					</ol>
+					<ol class="breadcrumb" style="margin-bottom: 5px;">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Library</a></li>
+						<li class="active">Data</li>
+					</ol>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Pagination -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<h2>Pagination</h2>
+			<p>Reference: <a href="http://getbootstrap.com/components/#pagination" target="_blank">Bootstrap Pagination</a></p>
+			<div class="row">
+				<div class="col-lg-6">
+					<p class="lead">Pagination</p>
+					<p><code>ul.pagination>(li.active>a)+(li>a)</code></p>
+					<ul class="pagination pagination-sm">
+						<li><a href="#">&laquo;</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li class="disabled"><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+					<br>
+					<ul class="pagination">
+						<li><a href="#">&laquo;</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li class="disabled"><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+					<br>
+					<ul class="pagination pagination-lg">
+						<li><a href="#">&laquo;</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li class="disabled"><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-6">
+					<p class="lead">Pager aligned</p>
+					<p><code>ul.pager>(li.previous>a)+(li.next>a)</code></p>
+					<ul class="pager">
+						<li class="previous disabled"><a href="#">&larr; Older</a></li>
+						<li class="next"><a href="#">Newer &rarr;</a></li>
+					</ul>
+					<br>
+					<p class="lead">Pager default</p>
+					<p><code>ul.pager>(li>a)+(li>a)</code></p>
+					<ul class="pager">
+						<li class="disabled"><a href="#">&larr; Older</a></li>
+						<li><a href="#">Newer &rarr;</a></li>
+					</ul>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Labels & Badges -->
+	<section class="wrapper-lg bg-highlight">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<h2>Labels</h2>
+					<p>Reference: <a href="http://getbootstrap.com/components/#labels" target="_blank">Bootstrap Labes, Badges & Navs</a></p>
+					<p><code>span.label.label-default</code></p>
+					<span class="label label-default">Default</span>
+					<span class="label label-primary">Primary</span>
+					<span class="label label-success">Success</span>
+					<span class="label label-info">Info</span>
+					<span class="label label-warning">Warning</span>
+					<span class="label label-danger">Danger</span>
+				</div><!-- /.col -->
+				<div class="col-lg-3">
+					<h2>Badges</h2>
+					<p><code>span.badge</code></p>
+					<p>Badge: <span class="badge">42</span></p>
+					<br>
+					<p><code>a>span.badge</code></p>
+					<p>Badge iside link: <a href="#">Inbox <span class="badge">42</span></a></p>
+				</div><!-- /.col -->
+				<div class="col-lg-5">
+					<h2>Badges inside navs:</h2>
+					<p class="lead">Nav Pills</p>
+					<p><code>ul.nav.nav-pills>(li.active>a)+(li>a)</code></p>
+					<ul class="nav nav-pills">
+						<li class="active"><a href="#">Home <span class="badge">42</span></a></li>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Messages <span class="badge">3</span></a></li>
+					</ul>
+					<br>
+					<p class="lead">Nav Pills Stacked</p>
+					<p><code>ul.nav.nav-pills.nav-stacked>(li.active>a)+(li>a)</code></p>
+					<ul class="nav nav-pills nav-stacked" style="max-width: 260px;">
+						<li class="active"><a href="#"><span class="badge pull-right">42</span>Home</a></li>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#"><span class="badge pull-right">3</span>Messages</a></li>
+					</ul>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Jumbotron -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>Jumbotron</h2>
+					<p>Reference: <a href="http://getbootstrap.com/components/#jumbotron" target="_blank">Bootstrap Jumbotron</a></p>
+					<p><code>div.jumbotron > div.container > h1 + p</code></p>
+					<div class="jumbotron">
+						<h1>Bootstrap UI</h1>
+						<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+						<p><a class="btn btn-primary btn-lg">Download Now</a></p>
+					</div><!-- /.jumbotron -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Thumbnails -->
+	<section class="wrapper-lg bg-highlight">
+		<div class="container">
+			<h2>Thumbnails</h2>
+			<p>Reference: <a href="http://getbootstrap.com/components/#thumbnails" target="_blank">Bootstrap Thumbnails</a></p>
+			<h3>Thumbnail - Links:</h3>
+			<p><code>a.thumbnail>img</code></p>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<a href="#" class="thumbnail">
+						<img data-src="holder.js/300x200/#2a2f37:#ffffff/auto/" alt="img">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="#" class="thumbnail">
+						<img data-src="holder.js/300x200/#2a2f37:#ffffff/auto/" alt="img">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="#" class="thumbnail">
+						<img data-src="holder.js/300x200/#2a2f37:#ffffff/auto/" alt="img">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="#" class="thumbnail">
+						<img data-src="holder.js/300x200/#2a2f37:#ffffff/auto/" alt="img">
+					</a>
+				</div>
+			</div><!-- /.row -->
+
+			<br class="spacer-lg">
+			<h3>Thumbnails - Custom content:</h3>
+			<p><code>div.thumbnail>(a>img)+(div.caption>p)</code></p>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a href="#"><img data-src="holder.js/300x200/#2a2f37:#ffffff/auto/" alt="img"></a>
+						<div class="caption">
+							<h4><a href="#">Thumbnail label</a></h4>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+							<p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
+						</div><!-- /.caption -->
+					</div><!-- /.thumbnail -->
+				</div><!-- /.col -->
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a href="#"><img data-src="holder.js/300x200/#2a2f37:#ffffff/auto/" alt="img"></a>
+						<div class="caption">
+							<h4><a href="#">Thumbnail label</a></h4>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+							<p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
+						</div><!-- /.caption -->
+					</div><!-- /.thumbnail -->
+				</div><!-- /.col -->
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a href="#"><img data-src="holder.js/300x200/#2a2f37:#ffffff/auto/" alt="img"></a>
+						<div class="caption">
+							<h4><a href="#">Thumbnail label</a></h4>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+							<p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
+						</div><!-- /.caption -->
+					</div><!-- /.thumbnail -->
+				</div><!-- /.col -->
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a href="#"><img data-src="holder.js/300x200/#2a2f37:#ffffff/auto/" alt="img"></a>
+						<div class="caption">
+							<h4><a href="#">Thumbnail label</a></h4>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+							<p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
+						</div><!-- /.caption -->
+					</div><!-- /.thumbnail -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+
+			<br class="spacer-lg">
+			<h3>Thumbnails - With overlay and extra rows:</h3>
+			<p><code>div.thumbnail>(div.overlay-container>img+div.overlay-content>p)+(div.caption>p)+(div.thumbnail-meta>p)</code></p>
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="thumbnail">
+						<div class="overlay-container">
+							<img data-src="holder.js/300x300/#2a2f37:#ffffff/auto/">
+							<div class="overlay-content">
+								<h3 class="h4 headline">Thumbnail Title</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet consctetur.</p>
+							</div><!-- /.overlay-content -->
+						</div><!-- /.overlay-container -->
+						<div class="caption">
+							<h4><a href="#link">Beautiful Photography »</a></h4>
+							<p>Graphikaria photo albums...</p>
+						</div>
+						<div class="thumbnail-meta">
+							<a href="#link"><img class="img-thumbnail" data-src="holder.js/30x30/text:User" alt="User" style="width: 30px; height: 30px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABh0lEQVRIS+2UzYuCYBDGH42+MKhDEQjlOfowkiCosP+fsKJLX6eoQJSI6KAWuTsDwbLbhoHbHnIu6uswz8xvHl5hv9/7+IcQIuFXUY9Qv4o0ItRvivp4PGI+n0NVVSQSCWy3W3zecKjVahAEIRQqd81FIoZhoNvtIp1OYzabYbfbYTAYQBTFvxfu9XpIpVJYLBYsTAQmkwkulwvi8Tja7TZisRhGoxFOpxMymQw0TePc5XLJDRaLRdTr9R/NPpz4u3ChUIBpmqhUKvwslUqwLIuFWq0WxuMx8vk8r2e9XqNcLrNwNpt9Trjf7yOZTHL3m80GjUaDJ75erzxptVrFarWC4zj87fs+i0iSxL6g1fzmibsTHw4HDIdDKIrCHdMktFt6P5/PkGWZ8ZIIIbdtG51Oh1eSy+Xgui5T0HX9OWHiMp1OGectCCWJ0vktms0mm4+apH8UlEfmJGEi9tTEt8JkIsJKO/sanucFOntk/+iuDuVyCFIkQh2EUig5EepQMAYp8n6oPwAhUCK8Nw33AgAAAABJRU5ErkJggg=="></a> <a href="#link">Lucida Sans</a> submited this entry
+						</div>
+						<div class="thumbnail-meta">
+							<i class="fa fa-clock-o"></i> Oct 3, 2014 - <i class="fa fa-heart"></i> 23 <i class="fa fa-comments"></i> 14
+						</div>
+					</div><!-- /.thumbnail -->
+				</div><!-- /.col -->
+				<div class="col-sm-3">
+					<div class="thumbnail">
+						<div class="overlay-container">
+							<img data-src="holder.js/300x300/#2a2f37:#ffffff/auto/">
+							<div class="overlay-content">
+								<h3 class="h4 headline">Thumbnail Title</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet consctetur.</p>
+							</div><!-- /.overlay-content -->
+						</div><!-- /.overlay-container -->
+						<div class="caption">
+							<h4><a href="#link">Beautiful Photography »</a></h4>
+							<p>Graphikaria photo albums...</p>
+						</div>
+						<div class="thumbnail-meta">
+							<a href="#link"><img class="img-thumbnail" data-src="holder.js/30x30/text:User" alt="User" style="width: 30px; height: 30px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABh0lEQVRIS+2UzYuCYBDGH42+MKhDEQjlOfowkiCosP+fsKJLX6eoQJSI6KAWuTsDwbLbhoHbHnIu6uswz8xvHl5hv9/7+IcQIuFXUY9Qv4o0ItRvivp4PGI+n0NVVSQSCWy3W3zecKjVahAEIRQqd81FIoZhoNvtIp1OYzabYbfbYTAYQBTFvxfu9XpIpVJYLBYsTAQmkwkulwvi8Tja7TZisRhGoxFOpxMymQw0TePc5XLJDRaLRdTr9R/NPpz4u3ChUIBpmqhUKvwslUqwLIuFWq0WxuMx8vk8r2e9XqNcLrNwNpt9Trjf7yOZTHL3m80GjUaDJ75erzxptVrFarWC4zj87fs+i0iSxL6g1fzmibsTHw4HDIdDKIrCHdMktFt6P5/PkGWZ8ZIIIbdtG51Oh1eSy+Xgui5T0HX9OWHiMp1OGectCCWJ0vktms0mm4+apH8UlEfmJGEi9tTEt8JkIsJKO/sanucFOntk/+iuDuVyCFIkQh2EUig5EepQMAYp8n6oPwAhUCK8Nw33AgAAAABJRU5ErkJggg=="></a> <a href="#link">Lucida Sans</a> submited this entry
+						</div>
+						<div class="thumbnail-meta">
+							<i class="fa fa-clock-o"></i> Oct 3, 2014 - <i class="fa fa-heart"></i> 23 <i class="fa fa-comments"></i> 14
+						</div>
+					</div><!-- /.thumbnail -->
+				</div><!-- /.col -->
+				<div class="col-sm-3">
+					<div class="thumbnail">
+						<div class="overlay-container">
+							<img data-src="holder.js/300x300/#2a2f37:#ffffff/auto/">
+							<div class="overlay-content">
+								<h3 class="h4 headline">Thumbnail Title</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet consctetur.</p>
+							</div><!-- /.overlay-content -->
+						</div><!-- /.overlay-container -->
+						<div class="caption">
+							<h4><a href="#link">Beautiful Photography »</a></h4>
+							<p>Graphikaria photo albums...</p>
+						</div>
+						<div class="thumbnail-meta">
+							<a href="#link"><img class="img-thumbnail" data-src="holder.js/30x30/text:User" alt="User" style="width: 30px; height: 30px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABh0lEQVRIS+2UzYuCYBDGH42+MKhDEQjlOfowkiCosP+fsKJLX6eoQJSI6KAWuTsDwbLbhoHbHnIu6uswz8xvHl5hv9/7+IcQIuFXUY9Qv4o0ItRvivp4PGI+n0NVVSQSCWy3W3zecKjVahAEIRQqd81FIoZhoNvtIp1OYzabYbfbYTAYQBTFvxfu9XpIpVJYLBYsTAQmkwkulwvi8Tja7TZisRhGoxFOpxMymQw0TePc5XLJDRaLRdTr9R/NPpz4u3ChUIBpmqhUKvwslUqwLIuFWq0WxuMx8vk8r2e9XqNcLrNwNpt9Trjf7yOZTHL3m80GjUaDJ75erzxptVrFarWC4zj87fs+i0iSxL6g1fzmibsTHw4HDIdDKIrCHdMktFt6P5/PkGWZ8ZIIIbdtG51Oh1eSy+Xgui5T0HX9OWHiMp1OGectCCWJ0vktms0mm4+apH8UlEfmJGEi9tTEt8JkIsJKO/sanucFOntk/+iuDuVyCFIkQh2EUig5EepQMAYp8n6oPwAhUCK8Nw33AgAAAABJRU5ErkJggg=="></a> <a href="#link">Lucida Sans</a> submited this entry
+						</div>
+						<div class="thumbnail-meta">
+							<i class="fa fa-clock-o"></i> Oct 3, 2014 - <i class="fa fa-heart"></i> 23 <i class="fa fa-comments"></i> 14
+						</div>
+					</div><!-- /.thumbnail -->
+				</div><!-- /.col -->
+				<div class="col-sm-3">
+					<div class="thumbnail">
+						<div class="overlay-container">
+							<img data-src="holder.js/300x300/#2a2f37:#ffffff/auto/">
+							<div class="overlay-content">
+								<h3 class="h4 headline">Thumbnail Title</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet consctetur.</p>
+							</div><!-- /.overlay-content -->
+						</div><!-- /.overlay-container -->
+						<div class="caption">
+							<h4><a href="#link">Beautiful Photography »</a></h4>
+							<p>Graphikaria photo albums...</p>
+						</div>
+						<div class="thumbnail-meta">
+							<a href="#link"><img class="img-thumbnail" data-src="holder.js/30x30/text:User" alt="User" style="width: 30px; height: 30px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABh0lEQVRIS+2UzYuCYBDGH42+MKhDEQjlOfowkiCosP+fsKJLX6eoQJSI6KAWuTsDwbLbhoHbHnIu6uswz8xvHl5hv9/7+IcQIuFXUY9Qv4o0ItRvivp4PGI+n0NVVSQSCWy3W3zecKjVahAEIRQqd81FIoZhoNvtIp1OYzabYbfbYTAYQBTFvxfu9XpIpVJYLBYsTAQmkwkulwvi8Tja7TZisRhGoxFOpxMymQw0TePc5XLJDRaLRdTr9R/NPpz4u3ChUIBpmqhUKvwslUqwLIuFWq0WxuMx8vk8r2e9XqNcLrNwNpt9Trjf7yOZTHL3m80GjUaDJ75erzxptVrFarWC4zj87fs+i0iSxL6g1fzmibsTHw4HDIdDKIrCHdMktFt6P5/PkGWZ8ZIIIbdtG51Oh1eSy+Xgui5T0HX9OWHiMp1OGectCCWJ0vktms0mm4+apH8UlEfmJGEi9tTEt8JkIsJKO/sanucFOntk/+iuDuVyCFIkQh2EUig5EepQMAYp8n6oPwAhUCK8Nw33AgAAAABJRU5ErkJggg=="></a> <a href="#link">Lucida Sans</a> submited this entry
+						</div>
+						<div class="thumbnail-meta">
+							<i class="fa fa-clock-o"></i> Oct 3, 2014 - <i class="fa fa-heart"></i> 23 <i class="fa fa-comments"></i> 14
+						</div>
+					</div><!-- /.thumbnail -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+
+			<br class="spacer-lg">
+			<h3>Thumbnail - Frameless:</h3>
+			<p><code>div.thumbnail.thumbnail-frameless>(a>img)+(div.caption>p)</code></p>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail thumbnail-frameless text-center">
+						<a href="#"><img data-src="holder.js/300x200/#2a2f37:#ffffff/auto/" alt="img"></a>
+						<div class="caption">
+							<h4><a href="#">Thumbnail label</a></h4>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+						</div><!-- /.caption -->
+					</div><!-- /.thumbnail -->
+				</div><!-- /.col -->
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail thumbnail-frameless text-center">
+						<a href="#"><img data-src="holder.js/300x200/#2a2f37:#ffffff/auto/" alt="img"></a>
+						<div class="caption">
+							<h4><a href="#">Thumbnail label</a></h4>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+						</div><!-- /.caption -->
+					</div><!-- /.thumbnail -->
+				</div><!-- /.col -->
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail thumbnail-frameless text-center">
+						<a href="#"><img data-src="holder.js/300x200/#2a2f37:#ffffff/auto/" alt="img"></a>
+						<div class="caption">
+							<h4><a href="#">Thumbnail label</a></h4>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+						</div><!-- /.caption -->
+					</div><!-- /.thumbnail -->
+				</div><!-- /.col -->
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail thumbnail-frameless text-center">
+						<a href="#"><img data-src="holder.js/300x200/#2a2f37:#ffffff/auto/" alt="img"></a>
+						<div class="caption">
+							<h4><a href="#">Thumbnail label</a></h4>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+						</div><!-- /.caption -->
+					</div><!-- /.thumbnail -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Isotope -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<h2>Filtering and Sorting <span class="text-muted">With Isotope</span></h2>
+					<p>
+						<strong>Isotope V2 Reference:</strong> <a href="http://isotope.metafizzy.co/" target="_blank">http://isotope.metafizzy.co/</a><br>
+						<span class="label label-info">Heads up:</span> I used Isotope version 2. Make sure you are addressing the right documentation in Isotope website.
+					</p>
+					<h3>Example:</h3>
+					<p>
+						<ul id="filters" class="tags">
+							<li><strong>Browse by tags:</strong></li>
+							<li class="active"><a href="#link" data-filter="*">Show All</a></li>
+							<li><a href="#link" data-filter=".apples">apples</a></li>
+							<li><a href="#link" data-filter=".kiwis">kiwis</a></li>
+							<li><a href="#link" data-filter=".oranges">oranges</a></li>
+						</ul>
+					</p>
+				</div><!-- /.col -->
+				<div class="col-sm-12 col-md-6">
+					<p><strong>The filters:</strong></p>
+<pre><code class="language-markup">&lt;ul id="filters" class="tags"&gt;
+  &lt;li&gt;&lt;strong&gt;Browse by tags:&lt;/strong&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;&lt;a href="#link" data-filter="*"&gt;Show All&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#link" data-filter=".apples"&gt;apples&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#link" data-filter=".kiwis"&gt;kiwis&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#link" data-filter=".oranges"&gt;oranges&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p><strong>The items:</strong></p>
+<pre><code class="language-markup">&lt;div class="row isotope-container"&gt;
+  &lt;div class="col-sm-4 isotope-item apples"&gt;&lt;/div&gt;
+  &lt;div class="col-sm-4 isotope-item kiwis"&gt;&lt;/div&gt;
+  &lt;div class="col-sm-4 isotope-item oranges"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p><strong>Example JS setup:</strong></p>
+<pre><code class="language-javascript">$(window).load(function() {
+  var $container = $('.isotope-container').isotope({});
+  $container.isotope({
+    resizable: false,
+    layoutMode : 'masonry',
+    itemSelector : '.isotope-item'
+  });
+  $('#filters a').click(function(){
+    var selector = $(this).attr('data-filter');
+    $container.isotope({ filter: selector });
+    $(this).parent().parent().find('.active').removeClass('active');
+    $(this).addClass('active');
+    return false;
+  });
+});
+</code></pre>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Alerts -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<h2>Alerts</h2>
+			<p>Reference: <a href="http://getbootstrap.com/components/#alerts" target="_blank">Bootstrap Alerts</a></p>
+			<div class="row">
+				<div class="col-lg-6">
+					<p><code>div.alert.alert-success.alert-dismissable</code></p>
+					<div class="alert alert-dismissable alert-success">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<h4>Success</h4>
+						<strong>Well done!</strong> You successfully read this important alert <a class="alert-link" href="#">message</a>.
+					</div>
+					<p><code>div.alert.alert-info.alert-dismissable</code></p>
+					<div class="alert alert-dismissable alert-info">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<h4>Info</h4>
+						<strong>Heads up!</strong> This alert needs your attention, but it's not super <a class="alert-link" href="#">important</a>.
+					</div>
+				</div><!-- /.col -->
+				<div class="col-lg-6">
+					<p><code>div.alert.alert-warning.alert-dismissable</code></p>
+					<div class="alert alert-dismissable alert-warning">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<h4>Warning</h4>
+						<strong>Warning!</strong> Best check yo self, you're not looking too <a class="alert-link" href="#">good</a>.
+					</div>
+					<p><code>div.alert.alert-danger.alert-dismissable</code></p>
+					<div class="alert alert-dismissable alert-danger">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<h4>Danger</h4>
+						<strong>Oh snap!</strong> Change a few things up and try submitting <a class="alert-link" href="#">again</a>.
+					</div>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Progress Bars -->
+	<section class="wrapper-lg bg-highlight">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>Progress Bars</h2>
+					<p>Reference: <a href="http://getbootstrap.com/components/#progress" target="_blank">Bootstrap Progress Bars</a></p>
+					<p><code>div.progress.progress-striped>div.progress-bar[style=width:20%]>span.sr-only{Loading or something}</code></p>
+					<p class="lead">Default:</p>
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+							<span class="sr-only">40% Complete (success)</span>
+						</div>
+					</div><!-- /.progress -->
+					<p class="lead">Success:</p>
+					<div class="progress progress-striped">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+							<span class="sr-only">40% Complete (success)</span>
+						</div>
+					</div><!-- /.progress -->
+					<p class="lead">Info:</p>
+					<div class="progress progress-striped">
+						<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+							<span class="sr-only">20% Complete</span>
+						</div>
+					</div><!-- /.progress -->
+					<p class="lead">Warning:</p>
+					<div class="progress progress-striped">
+						<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+							<span class="sr-only">60% Complete (warning)</span>
+						</div>
+					</div><!-- /.progress -->
+					<p class="lead">Danger:</p>
+					<div class="progress progress-striped">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							<span class="sr-only">80% Complete (danger)</span>
+						</div>
+					</div><!-- /.progress -->
+					<p class="lead">Active:</p>
+					<div class="progress progress-striped active">
+						<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							<span class="sr-only">80% Complete (danger)</span>
+						</div>
+					</div><!-- /.progress -->
+					<p class="lead">Stacked:</p>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" style="width: 35%">
+							<span class="sr-only">35% Complete (success)</span>
+						</div>
+						<div class="progress-bar progress-bar-warning" style="width: 20%">
+							<span class="sr-only">20% Complete (warning)</span>
+						</div>
+						<div class="progress-bar progress-bar-danger" style="width: 10%">
+							<span class="sr-only">10% Complete (danger)</span>
+						</div>
+					</div><!-- /.progress -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Media Object -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<h2>Media Object</h2>
+			<p>Reference: <a href="http://getbootstrap.com/components/#media" target="_blank">Bootstrap Media Object</a></p>
+			<hr>
+			<div class="row">
+				<!-- Default Media -->
+				<div class="col-lg-6">
+					<h3>Media Default</h3>
+					<p><code>div.media>(a.pull-left>img.media-object)+div.media-body>h4.media-heading+p</code></p>
+					<div class="media">
+						<a class="pull-left" href="#"><img class="media-object" data-src="holder.js/64x64" alt="64x64"></a>
+						<div class="media-body">
+							<h4 class="media-heading">Media heading</h4>
+							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+						</div><!-- /.media-body -->
+					</div><!-- /.media -->
+					<div class="media">
+						<a class="pull-left" href="#"><img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;"></a>
+						<div class="media-body">
+							<h4 class="media-heading">Media heading</h4>
+							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+							<div class="media">
+								<a class="pull-left" href="#"><img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;"></a>
+								<div class="media-body">
+									<h4 class="media-heading">Media heading</h4>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+								</div>
+							</div><!-- /.media -->
+						</div><!-- /.media-body -->
+					</div><!-- /.media -->
+				</div><!-- /.col -->
+
+				<!-- Media List -->
+				<div class="col-lg-6">
+					<h2>Media List</h2>
+					<p><code>ul.media-list>li.media>(a.pull-left>img.media-object)+div.media-body>h4.media-heading+p</code></p>
+					<ul class="media-list">
+						<li class="media">
+							<a class="pull-left" href="#"><img class="media-object img-circle" data-src="holder.js/64x64" alt="img"></a>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+								<!-- Nested media object -->
+								<div class="media">
+									<a class="pull-left" href="#"><img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;"></a>
+									<div class="media-body">
+										<h4 class="media-heading">Nested media heading</h4>
+										Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+										<!-- Nested media object -->
+										<div class="media">
+											<a class="pull-left" href="#"><img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;"></a>
+											<div class="media-body">
+												<h4 class="media-heading">Nested media heading</h4>
+												Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+											</div>
+										</div><!-- /.media -->
+									</div><!-- /.media-body -->
+								</div><!-- /.media -->
+								<!-- Nested media object -->
+								<div class="media">
+									<a class="pull-left" href="#"><img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;"></a>
+									<div class="media-body">
+										<h4 class="media-heading">Nested media heading</h4>
+										Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+									</div><!-- /.media-body -->
+								</div><!-- /.media -->
+							</div><!-- /.media-body -->
+						</li><!-- /.media -->
+						<li class="media">
+							<a class="pull-right" href="#"><img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;"></a>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+							</div><!-- /.media-body -->
+						</li><!-- /.media -->
+					</ul><!-- /.media-list -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- List Group -->
+	<section class="wrapper-lg bg-highlight">
+		<div class="container">
+			<h2>List Group</h2>
+			<p>Reference: <a href="http://getbootstrap.com/components/#list-group" target="_blank">Bootstrap List Groups</a></p>
+			<div class="row">
+				<div class="col-lg-6">
+					<p class="lead">Basic Example</p>
+					<p><code>ul.list-group&gt;(li.list-group-item.active)+(li.list-group-item)</code></p>
+					<ul class="list-group">
+						<li class="list-group-item active">
+							<span class="badge">14</span>
+							Cras justo odio
+						</li>
+						<li class="list-group-item">
+							<span class="badge">2</span>
+							Dapibus ac facilisis in
+						</li>
+						<li class="list-group-item">
+							<span class="badge">1</span>
+							Morbi leo risus
+						</li>
+					</ul>
+					<p class="lead">Linked Items:</p>
+					<p><code>div.list-group&gt;(a.list-group-item.active)+(a.list-group-item)</code></p>
+					<div class="list-group">
+						<a href="#" class="list-group-item active">Cras justo odio</a>
+						<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+						<a href="#" class="list-group-item">Morbi leo risus</a>
+						<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+						<a href="#" class="list-group-item">Vestibulum at eros</a>
+					</div>
+				</div><!-- /.col -->
+				<div class="col-lg-6">
+					<p class="lead">HTML content</p>
+					<p><code>div.list-group&gt;(a.list-group-item.active&gt;h4.list-group-item-heading+p.list-group-item-text)+(a.list-group-item.active&gt;h4.list-group-item-heading+p.list-group-item-text)</code></p>
+					<div class="list-group">
+						<a href="#" class="list-group-item active">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+					</div><!-- /.list-group -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Panels -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<h2>Panels</h2>
+			<p>Reference: <a href="http://getbootstrap.com/components/#panels" target="_blank">Bootstap Panels</a></p>
+			<p><code>div.panel.panel-default>div.panel-heading{Hello}+div.panel-body{World}</code></p>
+			<div class="row">
+				<div class="col-lg-4">
+					<p class="lead">Basic panel:</p>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							Body text.
+						</div>
+					</div><!-- /.panel -->
+					<div class="panel panel-default">
+						<div class="panel-heading">Panel heading</div>
+						<div class="panel-body">
+							Body text.
+						</div>
+					</div><!-- /.panel -->
+					<div class="panel panel-default">
+						<div class="panel-body">
+							Body text.
+						</div>
+						<div class="panel-footer">
+							Panel footer
+						</div>
+					</div><!-- /.panel -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel heading</h3>
+						</div>
+						<div class="panel-body">
+							Body text.
+						</div>
+					</div><!-- /.panel -->
+				</div><!-- /.col-* -->
+
+				<div class="col-lg-4">
+					<p class="lead">Contextual alternatives:</p>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel Primary</h3>
+						</div>
+						<div class="panel-body">
+							Body text
+						</div>
+					</div><!-- /.panel -->
+					<div class="panel panel-secondary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel Secondary</h3>
+						</div>
+						<div class="panel-body">
+							Body text
+						</div>
+					</div><!-- /.panel -->
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel Success</h3>
+						</div>
+						<div class="panel-body">
+							Body text
+						</div>
+					</div><!-- /.panel -->
+				</div><!-- /.col-* -->
+
+				<div class="col-lg-4">
+					<p class="lead">Contextual alternatives:</p>
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel Info</h3>
+						</div>
+						<div class="panel-body">
+							Body text
+						</div>
+					</div><!-- /.panel -->
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel Warning</h3>
+						</div>
+						<div class="panel-body">
+							Body text
+						</div>
+					</div><!-- /.panel -->
+					<div class="panel panel-danger">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel Danger</h3>
+						</div>
+						<div class="panel-body">
+							Body text
+						</div>
+					</div><!-- /.panel -->
+				</div><!-- /.col-* -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Panels widht Tables -->
+	<section class="wrapper-lg bg-highlight">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h2>Panels and tables</h2>
+					<p><span class="text-muted">See panels reference above.</span></p>
+					<div class="panel panel-default">
+						<!-- Default panel contents -->
+						<div class="panel-heading">
+							Panel heading
+						</div>
+						<div class="panel-body">
+							<p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+						</div>
+						<!-- Table -->
+						<table class="table">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- /.panel -->
+				</div><!-- /col- -->
+
+				<div class="col-lg-6">
+					<h2>Panels and list groups</h2>
+					<p><span class="text-muted">See panels reference</span></p>
+					<div class="panel panel-default">
+						<!-- Default panel contents -->
+						<div class="panel-heading">
+							Panel heading
+						</div>
+						<div class="panel-body">
+							<p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+						</div>
+						<!-- List group -->
+						<ul class="list-group">
+							<li class="list-group-item">Cras justo odio</li>
+							<li class="list-group-item">Dapibus ac facilisis in</li>
+							<li class="list-group-item">Morbi leo risus</li>
+							<li class="list-group-item">Porta ac consectetur ac</li>
+							<li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+					</div><!-- /.panel -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Wells -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<h2>Wells</h2>
+			<p>Reference: <a href="http://getbootstrap.com/components/#wells" target="_blank">Bootstrap Wells</a></p>
+			<div class="row">
+				<div class="col-lg-3">
+					<p class="lead">Well Small</p>
+					<p><code>div.well.well-sm</code></p>
+					<div class="well well-sm text-center">
+						<h4>Premium Sevice</h4>
+						<p>You can use this template as your blog or portfolio</p>
+						<p><a href="#" class="btn btn-default btn-lg">Learn even more &raquo;</a></p>
+					</div><!-- /.well -->
+				</div><!-- /.col -->
+				<div class="col-lg-3">
+					<p class="lead">Well Default</p>
+					<p><code>div.well</code></p>
+					<div class="well text-center">
+						<h4>Premium Sevice</h4>
+						<p>You can use this template as your blog or portfolio</p>
+						<p><a href="#" class="btn btn-default btn-lg">Learn even more &raquo;</a></p>
+					</div><!-- /.well -->
+				</div><!-- /.col -->
+				<div class="col-lg-3">
+					<p class="lead">Well Large</p>
+					<p><code>div.well.well-lg</code></p>
+					<div class="well well-lg text-center">
+						<h4>Premium Sevice</h4>
+						<p>You can use this template as your blog or portfolio</p>
+						<p><a href="#" class="btn btn-default btn-lg">Learn even more &raquo;</a></p>
+					</div><!-- /.well -->
+				</div><!-- /.col -->
+				<div class="col-lg-3">
+					<p class="lead">Well Large</p>
+					<p><code>div.well.well-lg</code></p>
+					<div class="well well-lg text-center">
+						<h4>Premium Sevice</h4>
+						<p>You can use this template as your blog or portfolio</p>
+						<p><a href="#" class="btn btn-default btn-lg">Learn even more &raquo;</a></p>
+					</div><!-- /.well -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+
+			<br class="spacer-lg">
+			<h2>Widgets <span class="text-muted">Custom component</span></h2>
+			<p><span class="label label-info">Heads up:</span> Text inside <code>bg-*</code> may require the use of empahsis classes <code>.text-*</code> to style font colors.</p>
+			<br class="spacer-lg">
+			<div class="row">
+				<div class="col-md-3">
+					<p><code>.widget.padding-md.bg-light</code></p>
+					<div class="widget padding-md bg-light text-center">
+						<h4>Designing Products</h4>
+						<p class="lead">communication is imperative.</p>
+						<p>Doing product design in a huge organization is tricky.</p>
+					</div><!-- /.widget -->
+				</div><!-- /.col -->
+				<div class="col-md-3">
+					<p><code>.widget.widget-dashed</code></p>
+					<div class="widget padding-md widget-dashed">
+						<h4>Designing Products</h4>
+						<p class="lead">communication is imperative.</p>
+						<p>Doing product design in a huge organization is tricky.</p>
+					</div><!-- /.widget -->
+				</div><!-- /.col -->
+				<div class="col-md-3">
+					<p><code>.widget.padding-md.bg-dark</code></p>
+					<div class="widget padding-md bg-dark">
+						<h4>Designing Products</h4>
+						<p class="lead">communication is imperative.</p>
+						<p>Doing product design in a huge organization is tricky.</p>
+					</div><!-- /.widget -->
+				</div><!-- /.col -->
+				<div class="col-md-3">
+					<p><code>.widget.padding-md.bg-secondary</code></p>
+					<div class="widget bg-secondary padding-md text-center">
+						<h4>Designing Products</h4>
+						<p class="lead">communication is imperative.</p>
+						<p>Doing product design in a huge organization is tricky.</p>
+					</div><!-- /.widget -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+			<br class="spacer-lg">
+
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<p><code>widget.padding-sm.bg-primary</code></p>
+					<div class="widget padding-sm bg-primary">
+						<h4>Designing Products</h4>
+						<p class="lead">communication is imperative.</p>
+						<p>Doing product design in a huge organization is tricky.</p>
+					</div><!-- /.widget -->
+				</div><!-- /.col -->
+				<div class="col-sm-6 col-md-3">
+					<p><code>.widget.padding-md.bg-warning</code></p>
+					<div class="widget padding-md bg-warning">
+						<h4>Designing Products</h4>
+						<p class="lead">communication is imperative.</p>
+						<p>Doing product design in a huge organization is tricky.</p>
+					</div><!-- /.widget -->
+				</div><!-- /.col -->
+				<div class="col-sm-6 col-md-3">
+					<p><code>.widget.padding-lg.bg-danger</code></p>
+					<div class="widget padding-lg bg-danger">
+						<h4>Designing Products</h4>
+						<p class="lead">communication is imperative.</p>
+						<p>Doing product design in a huge organization is tricky.</p>
+					</div><!-- /.widget -->
+				</div><!-- /.col -->
+				<div class="col-sm-6 col-md-3">
+					<p><code>.widget.padding-lg.bg-success</code></p>
+					<div class="widget padding-lg bg-success">
+						<h4>Designing Products</h4>
+						<p class="lead">communication is imperative.</p>
+						<p>Doing product design in a huge organization is tricky.</p>
+					</div><!-- /.widget -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Modal -->
+	<section class="wrapper-lg bg-highlight">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<h2 class="media-heading">Modals</h2>
+					<p>Reference: <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Bootstrap Modals</a></p>
+					<!-- Button trigger modal -->
+					<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Launch Fancy Modal</a>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h2 class="modal-title">Modal Title</h2>
+								</div>
+								<div class="modal-body">
+									<h4>Text in a modal</h4>
+									<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+									<h4>Popover in a modal</h4>
+									<p>This <a href="#" role="button" class="btn btn-default" title="" data-toggle="popover" data-original-title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on click.</p>
+									<h4>Tooltips in a modal</h4>
+									<p><a href="#" title="" data-toggle="tooltip" data-original-title="Tooltip">This link</a> and <a href="#" title="" data-toggle="tooltip" data-original-title="Tooltip">that link</a> should have tooltips on hover.</p>
+									<hr>
+									<h4>Overflowing text to show scroll behavior</h4>
+									<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								</div>
+								<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
+				</div><!-- /.col -->
+				<div class="col-lg-9">
+					<p class="lead">A rendered modal with header, body, and set of actions in the footer.</p>
+					<p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults. Toggle a modal via JavaScript by clicking the button below. It will slide down and fade in from the top of the page.</p>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Tooltips and Popovers -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h2>Tooltips</h2>
+					<p>Reference: <a href="http://getbootstrap.com/javascript/#tooltips" target="_blank">Bootstap tooltips</a></p>
+					<p class="lead">Hover over these buttons</p>
+					<button type="button" class="btn btn-primary" title="" data-toggle="tooltip" data-placement="left" data-original-title="Tooltip on left">Tooltip left</button>
+					<button type="button" class="btn btn-primary" title="" data-toggle="tooltip" data-placement="top" data-original-title="Tooltip on top">Tooltip top</button>
+					<button type="button" class="btn btn-primary" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Tooltip on bottom">Tooltip bottom</button>
+					<button type="button" class="btn btn-primary" title="" data-toggle="tooltip" data-placement="right" data-original-title="Tooltip on right">Tooltip right</button>
+				</div><!-- /.col -->
+				<div class="col-lg-6">
+					<h2>Popovers</h2>
+					<p>Reference: <a href="http://getbootstrap.com/javascript/#popovers" target="_blank">Bootstap popovers</a></p>
+					<p class="lead">Press these buttons</p>
+					<button type="button" class="btn btn-danger"  title="" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover Title Here">Popover left</button>
+					<button type="button" class="btn btn-danger"  title="" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover Title Here">Popover top</button>
+					<button type="button" class="btn btn-danger"  title="" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover Title Here">Popover right</button>
+					<button type="button" class="btn btn-danger"  title="" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover Title Here">Popover bottom</button>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Collapse (accordion) -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h2>Collapse (accordion) with panel groups</h2>
+					<p>Reference: <a href="http://getbootstrap.com/javascript/#collapse" target="_blank">Bootstrap Collapse</a></p>
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-state="closed" data-text-open="<i class='fa fa-plus'></i>" data-text-close="<i class='fa fa-minus'></i>" href="#collapseOne">
+										<span class="toggle-indicator"></span> Collapsible Group Item #1
+									</a>
+								</h4>
+							</div><!-- /.panel-heading -->
+							<div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div><!-- /.panel-body -->
+							</div><!-- /.panel-collapse -->
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-state="closed" data-text-open="Show" data-text-close="Hide" href="#collapseTwo">
+										<span class="toggle-indicator"></span> Collapsible Group Item #2
+									</a>
+								</h4>
+							</div><!-- /.panel-heading -->
+							<div id="collapseTwo" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div><!-- /.panel-body -->
+							</div><!-- /.panel-collapse -->
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-state="closed" data-text-open="More" data-text-close="Less" href="#collapseThree">
+										<span class="toggle-indicator"></span> Collapsible Group Item #3
+									</a>
+								</h4>
+							</div><!-- /.panel-heading -->
+							<div id="collapseThree" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div><!-- /.panel-body -->
+							</div><!-- /.panel-collapse -->
+						</div><!-- /.panel -->
+					</div><!-- /.panel-group -->
+					<br class="spacer-lg">
+					<h2>Toggle Indicators</h2>
+					<p><span class="label label-info">Note:</span> Toggle indicators are independent from the collapse (accordion) component, thus can be applied to any link anywhere on any page. Just remember to add the following data attributes and include the corresponding javascript.</p>
+					<p class="lead">Example:</p>
+
+<pre class="line-numbers"><code class="language-markup">&lt;a class="btn btn-primary" href="#link" data-state="closed" data-text-open="Self Destroy" data-text-close="I'm kidding"&gt;
+  &lt;span class="toggle-indicator"&gt;&lt;/span&gt; Yo!
+&lt;/a&gt;</code></pre>
+
+<p class="lead">Result:</p>
+					<p><a class="btn btn-primary" href="#link" data-state="closed" data-text-open="Self Destroy" data-text-close="I'm kidding"><span class="toggle-indicator"></span> Yo!</a></p>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Pricing tables -->
+	<section class="wrapper-lg bg-highlight" id="pricing">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Pricing Tables</h2>
+					<p class="lead">Custom Component</p>
+				</div><!-- /.col -->
+				<div class="col-lg-12">
+					<p><code>div.plan>(div.plan-header>h3)+(div.plan-description>p)+(div.plan-price>h1)+(ul.plan-features>li)+(div.plan-cta)</code></p>
+					<br class="spacer-lg">
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-md-4">
+					<code>.plan</code>
+					<div class="plan">
+						<div class="plan-header">
+							<h3>Starter Pack</h3>
+						</div>
+						<div class="plan-description">
+							<p>Get a helping hand with our products in the members only premium area</p>
+						</div>
+						<div class="plan-price">
+							<h1>$12 <small>/month</small></h1>
+						</div>
+						<ul class="plan-features">
+							<li><i class="fa fa-check"></i> Unlimited Support <i class="fa fa-info-sign" data-toggle="tooltip" data-original-title="Restrictions apply"></i></li>
+							<li><i class="fa fa-check"></i> Basic Options</li>
+							<li><i class="fa fa-check"></i> 100GB Storage</li>
+							<li><i class="fa fa-times"></i> Ad Free Streaming</li>
+						</ul>
+						<div class="plan-cta"> <!-- call to action -->
+							<p>Unlimited ad-free streaming, unlimited viewers</p>
+							<br class="spacer-md">
+							<a href="#" class="btn btn-default btn-lg">Get it now! &raquo;</a>
+						</div>
+					</div><!-- /.plan -->
+				</div><!-- /.col -->
+				<div class="col-md-4">
+					<code>.plan</code>
+					<div class="plan">
+						<div class="plan-header">
+							<h3>Starter Pack</h3>
+						</div>
+						<div class="plan-description">
+							<p>Get a helping hand with our products in the members only premium area</p>
+						</div>
+						<div class="plan-price">
+							<h1>$24 <small>/month</small></h1>
+						</div>
+						<ul class="plan-features">
+							<li><i class="fa fa-check"></i> Unlimited Support <i class="fa fa-info-sign" data-toggle="tooltip" data-original-title="Restrictions apply"></i></li>
+							<li><i class="fa fa-check"></i> Basic Options</li>
+							<li><i class="fa fa-times"></i> 100GB Storage</li>
+							<li><i class="fa fa-times"></i> Ad Free Streaming</li>
+						</ul>
+						<div class="plan-cta"> <!-- call to action -->
+							<p>Unlimited ad-free streaming, unlimited viewers</p>
+							<br class="spacer-md">
+							<a href="#" class="btn btn-default btn-lg">Get it now! &raquo;</a>
+						</div>
+					</div><!-- /.plan -->
+				</div><!-- /.col -->
+				<div class="col-md-4">
+					<code>.plan.plan-featured</code>
+					<div class="plan plan-featured">
+						<div class="plan-header">
+							<h3>Starter Pack</h3>
+						</div>
+						<div class="plan-description">
+							<p>Get a helping hand with our products in the members only premium area</p>
+						</div>
+						<div class="plan-price">
+							<h1>$48 <small>/month</small></h1>
+						</div>
+						<ul class="plan-features">
+							<li><i class="fa fa-check"></i> Unlimited Support <i class="fa fa-info-sign" data-toggle="tooltip" data-original-title="Restrictions apply"></i></li>
+							<li><i class="fa fa-times"></i> Basic Options</li>
+							<li><i class="fa fa-times"></i> 100GB Storage</li>
+							<li><i class="fa fa-times"></i> Ad Free Streaming</li>
+						</ul>
+						<div class="plan-cta"> <!-- call to action -->
+							<p>Unlimited ad-free streaming, unlimited viewers</p>
+							<br class="spacer-md">
+							<a href="#" class="btn btn-primary btn-lg">Get it now! &raquo;</a>
+						</div>
+					</div><!-- /.plan -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- iframe wrappers -->
+	<section class="wrapper-lg">
+		<div class="container">
+			<h2>Embed Wrappers <span class="text-muted">For iframes, videos, maps.</span></h2>
+			<p class="lead">Control height via modifier classes</p>
+			<div class="row">
+				<div class="col-sm-4">
+					<p><code>section.embed-wrapper.embed-sm</code></p>
+					<section class="embed-wrapper embed-sm">
+						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=S%C3%A3o+Paulo,+Brazil&amp;aq=0&amp;oq=S%C3%A3o+Paulo&amp;sll=-14.264383,-51.943359&amp;sspn=52.984978,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=S%C3%A3o+Paulo,+Brazil&amp;t=m&amp;z=9&amp;ll=-23.55052,-46.633309&amp;output=embed"></iframe>
+					</section>
+				</div><!-- /.col -->
+				<div class="col-sm-4">
+					<p><code>section.embed-wrapper.embed-md</code></p>
+					<section class="embed-wrapper embed-md">
+						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=S%C3%A3o+Paulo,+Brazil&amp;aq=0&amp;oq=S%C3%A3o+Paulo&amp;sll=-14.264383,-51.943359&amp;sspn=52.984978,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=S%C3%A3o+Paulo,+Brazil&amp;t=m&amp;z=9&amp;ll=-23.55052,-46.633309&amp;output=embed"></iframe>
+					</section>
+				</div><!-- /.col -->
+				<div class="col-sm-4">
+					<p><code>section.embed-wrapper.embed-lg</code></p>
+					<section class="embed-wrapper embed-lg">
+						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=S%C3%A3o+Paulo,+Brazil&amp;aq=0&amp;oq=S%C3%A3o+Paulo&amp;sll=-14.264383,-51.943359&amp;sspn=52.984978,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=S%C3%A3o+Paulo,+Brazil&amp;t=m&amp;z=9&amp;ll=-23.55052,-46.633309&amp;output=embed"></iframe>
+					</section>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer-container">
+		<section class="footer-primary">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<h3>Footer Component</h3>
+						<p>Choose from our favourite tags:</p>
+						<ul class="tags">
+							<li><a href="#link">design</a></li>
+							<li><a href="#link">layout</a></li>
+							<li><a href="#link">stack</a></li>
+							<li><a href="#link">PSD</a></li>
+							<li><a href="#link">bootstrap</a></li>
+							<li><a href="#link">menu</a></li>
+							<li><a href="#link">type</a></li>
+							<li><a href="#link">paper</a></li>
+							<li><a href="#link">press</a></li>
+						</ul>
+					</div><!-- /.col -->
+					<div class="col-sm-6 col-md-3">
+						<h3>Image Stream List</h3>
+						<p>View our latest stills in Flicker:</p>
+						<ul class="img-stream">
+							<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+							<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+							<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+							<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+							<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+							<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+							<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+							<li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+						</ul>
+					</div><!-- /.col -->
+					<div class="col-sm-6 col-md-3">
+						<h3>Hyperlinks List</h3>
+						<p>Contact us whenever you want:</p>
+						<ul class="list-unstyled">
+							<li><i class="fa fa-angle-right"></i> <a href="#link">9am-6pm ET Mon-Fri</a></li>
+							<li><i class="fa fa-angle-right"></i> <a href="#link">US (877) 977-8732</a></li>
+							<li><i class="fa fa-angle-right"></i> <a href="#link">International +1 646 490 1679</a></li>
+						</ul>
+					</div><!-- /.col -->
+					<div class="col-sm-6 col-md-3">
+						<h3>Social Media List</h3>
+						<p>Stick to the social media hype:</p>
+						<ul class="social-networks">
+							<li><a class="btn btn-twitter" href="#"><i class="fa fa-fw fa-twitter"></i></a></li>
+							<li><a class="btn btn-facebook" href="#"><i class="fa fa-fw fa-facebook"></i></a></li>
+							<li><a class="btn btn-google-plus" href="#"><i class="fa fa-fw fa-google-plus"></i></a></li>
+							<li><a class="btn btn-pinterest" href="#"><i class="fa fa-fw fa-pinterest"></i></a></li>
+						</ul>
+						<p>We are friendly. Give us a ding!</p>
+					</div><!-- /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.wrapper-sm -->
+		<section class="footer-secondary">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="no-margin-bottom">All Rights Reserved ® Designed by <a href="http://twitter.com/graphikaria" target="_blank">@Graphikaria</a></p>
+					</div><!-- /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.footer-secondary -->
+	</footer><!-- /.footer-container --> <!-- End of footer -->
+
+	<!-- last but not least the javascript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.8.3.min.js"><\/script>')</script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/holder.js"></script>
+	<script src="assets/js/prism.js"></script>
+	<script src="assets/js/prism-line-numbers.js"></script>
+	<script>
+		$(document).ready(function(){
+			// tooltips
+			$('[data-toggle="tooltip"]').tooltip();
+			// popover demo
+			$('[data-toggle="popover"]').popover();
+			// dismiss alerts
+			$(".alert").alert();
+			// toggle open and close icon for collapse (accordions)
+			// set initial content
+			$('[data-state]').each(function () {
+				if ($(this).attr('data-state') == "open") {
+					$(this).find(".toggle-indicator").html($(this).attr('data-text-close'))
+				} else {
+					$(this).find(".toggle-indicator").html($(this).attr('data-text-open'))
+				}
+			});
+			// toggle content on click
+			$('[data-state]').click(function () {
+				// toggle state
+				$(this).attr('data-state', $(this).attr('data-state') == 'open' ? 'closed' : 'open')
+				// toggle content based on state
+				if ($(this).attr('data-state') == 'open') {
+					$(this).find(".toggle-indicator").html($(this).attr('data-text-close'))
+				} else {
+					$(this).find(".toggle-indicator").html($(this).attr('data-text-open'))
+				}
+			});
+		});
+	</script>
+</body>
+</html>

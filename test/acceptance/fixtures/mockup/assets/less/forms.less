@@ -1,0 +1,57 @@
+
+.form-control {
+	color: @form-control-text-color;
+	border-width: 1px;
+	border-color: @form-control-border-color;
+	border-radius: @form-control-border-radius;
+	&:focus {
+		border-color: @form-control-focus-border-color;
+		outline: 0;
+		.box-shadow(0 0 2px 2px fade(@form-control-focus-border-color, 20%));
+	}
+	&[disabled],
+	&[readonly],
+	fieldset[disabled] & {
+		background-color: darken(@form-control-disabled-bg, 5%);
+	}
+}
+
+// make inputs support icons
+.group-has-icon {
+	// position the parent
+	position: relative;
+	input {
+		padding-left: 2em;
+	}
+	input.input-lg {
+		padding-left: 2.5em;
+	}
+	i {
+		position: absolute;
+		display: block;
+		font-family: 'FontAwesome';
+		color: lighten(@text-color, 25%);
+		z-index: 100;
+	}
+	input + i {
+		// position the icon
+		top: 0.55em;
+		left: 0.55em;
+	}
+	input.input-lg + i {
+		top: 0.25em;
+		left: 0.25em;
+		font-size: 2em;
+	}
+}
+
+// Form control feedback states
+.has-warning {
+	.form-control-validation(@brand-warning; @brand-warning; @state-warning-bg);
+}
+.has-error {
+	.form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
+}
+.has-success {
+	.form-control-validation(@brand-success; @brand-success; @state-success-bg);
+}

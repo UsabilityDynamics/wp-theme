@@ -1,0 +1,36 @@
+.tags {
+	.clearfix();
+	margin-left: 0;
+	margin-bottom: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		display: inline-block;
+		float: left;
+		margin: 0 0.4em 0.4em 0;
+		span {
+			// place any text inside span
+			margin-right: 5px;
+		}
+		.text-center & {
+			float: none;
+		}
+		.text-right & {
+			float: right;
+		}
+		a {
+			display: inline-block;
+			padding: @tags-padding;
+			background: @tags-bg;
+			color: @tags-color;
+			text-decoration: none;
+			.border-radius(@tags-border-radius);
+			&:hover, &:focus {
+				background: @tags-active-bg;
+			}
+		}
+	}
+	.active a {
+		background: @tags-active-bg;
+	}
+}

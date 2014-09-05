@@ -1,0 +1,13 @@
+.popover {
+	padding: 0;
+	background-color: @popover-bg;
+	border: 1px solid @popover-border-color;
+	.border-radius(@popover-border-radius);
+}
+
+.popover-title {
+	color: @headings-font-color;
+	background-color: @popover-title-bg;
+	border-bottom: 1px solid darken(@popover-title-bg, 5%);
+	.border-radius(@popover-border-radius @popover-border-radius 0 0);
+}

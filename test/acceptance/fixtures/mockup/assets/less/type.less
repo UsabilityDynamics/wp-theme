@@ -1,0 +1,144 @@
+
+// Headings
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	margin-top: 0;
+	color: @headings-font-color;
+	font-family: @headings-font-family;
+	font-weight: @headings-font-weight;
+	text-transform: capitalize;
+	small {
+		color: @headings-small-color;
+	}
+	&.heading-lg {
+		font-size: 66px;
+	}
+}
+
+// Restore default heading color...
+.heading-default {
+	&,
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		color: @headings-font-color !important;
+	}
+}
+
+// Page heading decoration
+.page-header {
+	margin-top: 0;
+	border-bottom: 1px solid lighten(@text-color, 40%);
+}
+
+.headline {
+	position: relative;
+	margin-bottom: 1em;
+	&:after {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		content: " ";
+		width: 2em;
+		height: 0.15em;
+		margin-bottom: -0.5em;
+
+		// This decoration has 3 background variants:
+		background: @headings-font-color; // #1 <- default
+		// #2 in -> .thumbnail>.overlay-content{...}
+		// #3 in -> .section-variant() mixin
+
+		// And has also 3 justifying variants:
+		left: 0; // position #1: justified left
+	}
+	// position #2: justified center
+	.text-center &:after,
+	&.text-center:after {
+		left: 50%;
+		margin-left: -1em;
+	}
+	// position #3: justified right
+	.text-right &:after,
+	&.text-right:after {
+		left: auto;
+		right: 0;
+	}
+}
+
+// Block Quotes
+blockquote {
+	position: relative;
+	padding: 1.5em;
+	.border-radius(@base-border-radius);
+	p {
+		margin-bottom: 1em;
+	}
+	.quote-author {
+		display: block;
+		float: left;
+		margin-right: 1em;
+		max-width: 40px;
+		.border-radius(@base-border-radius);
+	}
+}
+
+.blockquote-default {
+	.blockquote-variant (#fff, darken(@base-border-color, 15%), @headings-font-color);
+}
+.blockquote-primary {
+	.blockquote-variant (@brand-primary, darken(@brand-primary, 15%), #fff);
+}
+.blockquote-secondary {
+	.blockquote-variant (@brand-secondary, darken(@brand-secondary, 15%), #fff);
+}
+
+// Contextual emphasis
+
+.text-default {
+	&,								// when text has .text-default class
+	[class*="bg-"] &, 				// when text has .text-default class, and is descendant of any .bg-* class
+	& a:not(.btn):not(:hover) { 	// when text content is a link, but is not a button, nor is :hover
+		color: @text-color;
+	}
+}
+.text-muted { 
+	color: lighten(@text-color, 20%);
+	&:hover {
+		color: @text-color;
+	}
+}
+.text-primary {
+	color: @brand-primary;
+	&:hover {
+		color: darken(@brand-primary, 10%);
+	}
+}
+.text-warning {
+	color: @brand-warning;
+	&:hover {
+		color: darken(@brand-warning, 10%);
+	}
+}
+.text-danger {
+	color: @brand-danger;
+	&:hover {
+		color: darken(@brand-danger, 10%);
+	}
+}
+.text-success {
+	color: @brand-success;
+	&:hover {
+		color: darken(@brand-success, 10%);
+	}
+}
+.text-info {
+	color: @brand-info;
+	&:hover {
+		color: darken(@brand-info, 10%);
+	}
+}
+.text-light {
+	color: #fff;
+	&:hover {
+		color: darken(#fff, 10%);
+	}
+}

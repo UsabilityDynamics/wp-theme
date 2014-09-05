@@ -1,0 +1,100 @@
+// bootstrap thumbnail
+
+a.thumbnail {
+	padding: @thumbnail-padding;
+	&:hover, &:focus {
+		border-color: @link-color;
+	}
+}
+
+.thumbnail {
+	margin-bottom: 20px;
+	padding: 0;
+	overflow: hidden;
+	border: 1px solid darken(@silver, 15%);
+	.border-radius(@thumbnail-border-radius);
+	.box-shadow(0 0 6px 2px fade(@grey, 15%));
+	>a {
+		display: block;
+		z-index: 999;
+		// transition - show it
+		.thumbnail-category {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			padding: 0.5em 1em;
+			background: @brand-secondary;
+			color: #fff;
+			font-size: 0.8em;
+			text-transform: uppercase;
+		}
+	}
+	.overlay-container {
+		position: relative;
+	}
+	.overlay-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 2em 2em 0;
+		background: fade(@brand-secondary, 85%);
+		z-index: 100;
+		&, p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+			color: #fff;
+		}
+		.headline:after {
+			background: #fff;
+		}
+		// transition - hide it
+		.transition(all 0.2s ease-in);
+		visibility: hidden;
+		.opacity(0);
+	}
+	&:hover, &:focus {
+		.overlay-content {
+			visibility: visible;
+			.opacity(1);
+		}
+	}
+	.caption {
+		padding: @thumbnail-caption-padding;
+		*:last-child {
+			margin-bottom: 0;
+		}
+		h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+			a {
+				color: @headings-font-color;
+				&:hover, &:focus {
+					color: @link-color;
+				}
+			}
+		}
+	}
+	.thumbnail-meta {
+		padding: @thumbnail-caption-padding;
+		border-top: 1px solid darken(@silver, 15%);
+		font-size: 85%;
+		*:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.thumbnail > img,
+.thumbnail > a img,
+.overlay-container > img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.thumbnail-frameless {
+	border: none;
+	background: transparent;
+	.box-shadow(none);
+	.caption {
+		padding: 1em 0;
+	}
+}

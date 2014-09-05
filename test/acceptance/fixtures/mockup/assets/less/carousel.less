@@ -1,0 +1,42 @@
+.carousel-inner>.item {
+	>img, >a>img {
+		width: 100%;
+	}
+}
+.carousel {
+	margin-bottom: 2em;
+}
+.carousel-caption {
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+		color: #fff;
+	}
+}
+@media screen and (min-width: 768px) {
+	.carousel-caption {
+		right: 5%;
+		left: 5%;
+		padding-bottom: auto;
+		top: 25%;
+	}
+}
+
+.carousel-control {
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	margin-top: -20px;
+	.opacity(1);
+	&.right,
+	&.left {
+		background: fade(#000, 20%);
+	}
+	& > span {
+		margin-top: -0.5em;
+	}
+	.glyphicon-chevron-left {
+		left: 0.5em;
+	}
+	.glyphicon-chevron-right {
+		right: 0.5em;
+	}
+}

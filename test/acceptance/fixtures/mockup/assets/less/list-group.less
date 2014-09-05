@@ -1,0 +1,42 @@
+
+.list-group-item {
+	background-color: @list-group-bg;
+	border: 1px solid @list-group-border;
+	&:first-child {
+		border-top-right-radius: @list-group-border-radius;
+		border-top-left-radius: @list-group-border-radius;
+	}
+	&:last-child {
+		border-bottom-right-radius: @list-group-border-radius;
+		border-bottom-left-radius: @list-group-border-radius;
+	}
+	// Linked list items
+	a& {
+		color: @list-group-link-color;
+		.list-group-item-heading {
+			color: @list-group-link-heading-color;
+		}
+		// Hover state
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			background-color: @list-group-hover-bg;
+		}
+	}
+
+	// Active class on item itself, not parent
+	a&.active,
+	a&.active:hover,
+	a&.active:focus {
+		color: @list-group-active-color;
+		background-color: @list-group-active-bg;
+		border-color: @list-group-active-border;
+		// Force color to inherit for custom content
+		.list-group-item-heading {
+			color: inherit;
+		}
+		.list-group-item-text {
+			color: lighten(@list-group-active-bg, 40%);
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.breadcrumb {
+	.border-radius(@breadcrumb-border-radius);
+	border: 1px solid lighten(@base-border-color, 10%);
+	background-color: @breadcrumb-bg;
+	> li {
+		&+li:before {
+			font-family: "Times New Roman", Times, serif;
+			content: "\00BB \00a0"; // Unicode space added since inline-block means non-collapsing white-space // /\00a0
+			color: @breadcrumb-color;
+		}
+	}
+	> .active {
+		color: @breadcrumb-active-color;
+	}
+}

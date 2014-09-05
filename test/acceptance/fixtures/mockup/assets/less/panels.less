@@ -1,0 +1,43 @@
+// Panels
+// -------------------------
+
+// Base class
+.panel {
+	color: @text-color;
+	background-color: @panel-bg;
+	border: 1px solid @panel-border-color;
+	border-radius: (@panel-border-radius + 1px); // make it fit with inner panel-heading
+	.panel-group & {
+		border-radius: @panel-border-radius;
+	}
+}
+
+// Optional footer (stays gray in every modifier class)
+.panel-footer {
+	border-top: 1px solid @panel-default-border;
+	background-color: @panel-default-footer-bg;
+}
+
+// Contextual variations
+
+.panel-default {
+	.panel-variant(@panel-default-border; @panel-default-text; @panel-default-heading-bg; @panel-default-border);
+}
+.panel-secondary {
+	.panel-variant(@panel-secondary-border; @panel-secondary-text; @panel-secondary-heading-bg; @panel-secondary-border);
+}
+.panel-primary {
+	.panel-variant(@panel-primary-border; @panel-primary-text; @panel-primary-heading-bg; @panel-primary-border);
+}
+.panel-success {
+	.panel-variant(@panel-success-border; @panel-success-text; @panel-success-heading-bg; @panel-success-border);
+}
+.panel-warning {
+	.panel-variant(@panel-warning-border; @panel-warning-text; @panel-warning-heading-bg; @panel-warning-border);
+}
+.panel-danger {
+	.panel-variant(@panel-danger-border; @panel-danger-text; @panel-danger-heading-bg; @panel-danger-border);
+}
+.panel-info {
+	.panel-variant(@panel-info-border; @panel-info-text; @panel-info-heading-bg; @panel-info-border);
+}

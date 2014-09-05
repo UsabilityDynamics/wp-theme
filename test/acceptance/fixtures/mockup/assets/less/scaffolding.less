@@ -1,0 +1,240 @@
+// Scaffolding
+// -------------------------
+
+body {
+	padding-top: @body-padding;
+	color: @text-color;
+	font-family: @base-font-family;
+	font-size: @base-font-size;
+	line-height: @base-line-height;
+	font-weight: @base-font-weight;
+	-webkit-font-smoothing: antialiased;
+	a {
+		color: @link-color;
+		&:hover, &:focus {
+			color: @link-color-hover;
+		}
+	}
+}
+.countdown {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.date-digit, .date-text {
+	display: block;
+	margin: 0 10px;
+}
+.date-digit {
+	font-size: 4em;
+	font-weight: bold;
+}
+
+// Full width section wrappers
+// -------------------------
+.wrapper-xs {
+	padding: 1em 0;
+}
+.wrapper-sm {
+	padding: 2em 0;
+}
+.wrapper-md {
+	padding: 5em 0;
+}
+.wrapper-lg {
+	padding: 8em 0;
+}
+
+// Modifiers - Background + Text
+// -------------------------
+
+// .section-variant(@background-color, @heading-color, @text-color);
+.bg-highlight {
+	.section-variant(@silver, @headings-font-color, @text-color);
+}
+.bg-primary {
+	.section-variant(@brand-primary, #fff, #fff);
+}
+.bg-secondary {
+	.section-variant(@brand-secondary, #fff, #fff);
+}
+.bg-info {
+	.section-variant(@brand-info, #fff, #fff);
+}
+.bg-warning {
+	.section-variant(@brand-warning, #fff, #fff);
+}
+.bg-success {
+	.section-variant(@brand-success, #fff, #fff);
+}
+.bg-danger {
+	.section-variant(@brand-danger, #fff, #fff);
+}
+.bg-light {
+	.section-variant(#fff, inherit, @text-color);
+}
+.bg-dark {
+	.section-variant(fade(@brand-secondary, 80%), #fff, #fff);
+}
+
+// Non re-usable styles
+.bg-custom-home {
+	background: url("../img/bg-custom.jpg") no-repeat center center fixed;
+	.background-size(cover);
+}
+.label-container {
+	display: block;
+	position: absolute;
+	top: 1.5em;
+	left: 1.5em;
+}
+
+// Modifiers - Margins
+// -------------------------
+.no-margin-bottom {
+	margin-bottom: 0 !important;
+}
+
+@media (min-width: 992px) {
+	.offset-top-xl {
+		margin-top: -12em;
+	}
+}
+
+// Modifiers - Paddings
+// -------------------------
+.padding-sm {
+	padding: 1em;
+}
+.padding-md {
+	padding: 2em;
+}
+.padding-lg {
+	padding: 3em;
+}
+.no-padding-bottom {
+	padding-bottom: 0 !important;
+}
+
+// Embed wrapper - for iframes, google maps, videos, etc.
+.embed-wrapper {
+	position: relative;
+	padding-top: 30px;
+	height: 0;
+	padding-bottom: 50%; // height is set via aspect ratio
+	overflow: hidden;
+	iframe, object, embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+}
+// Embed wrapper - Optional arbitrary heights
+@media (min-width: 768px) {
+	.embed-wrapper.embed-sm {
+		padding-bottom: 25%;
+	}
+
+	// medium (50%) is default, see above
+
+	.embed-wrapper.embed-lg {
+		padding-bottom: 75%;
+	}
+	.embed-wrapper.embed-square {
+		padding-bottom: 100%;
+	}
+}
+
+// Lists
+// -------------------------
+
+// List - Image stream (e.g. flickr, dribbble, advertising, etc).
+// -------------------------
+.img-stream {
+	.clearfix();
+	margin-bottom: 0;
+	padding: 0;
+	 li {
+	 	float: left;
+		display: block;
+		margin: 0 0.4em 0.4em 0;
+	}
+}
+
+// List - social media icons
+// -------------------------
+.social-networks {
+	padding-left: 0;
+	margin-bottom: 0;
+	.clearfix();
+	li {
+		display: inline-block;
+		float: left;
+		margin: 0 0.2em 0.5em 0;
+		.text-center & {
+			float: none;
+		}
+		.text-right & {
+			float: right;
+		}
+		a {
+			padding: 8px 10px;
+			font-size: @base-font-size*1.2;
+			color: #fff;
+		}
+	}
+}
+
+// Spacer element (use with <br/> or <div>)
+// -------------------------
+[class*="spacer"]:after {
+	display: block;
+	content: " ";
+}
+.spacer-sm {
+	margin-bottom: 10px;
+	line-height: 10px; // IE
+}
+.spacer-md {
+	margin-bottom: 20px;
+	line-height: 20px; // IE
+}
+.spacer-lg {
+	margin-bottom: 40px;
+	line-height: 40px; // IE
+}
+.spacer-xl {
+	margin-bottom: 80px;
+	line-height: 80px; // IE
+}
+
+// Fix - FontAwesome
+// let stacked icons center under .text-center
+.fa-stack-1x, .fa-stack-2x {
+	left: 0;
+}
+
+// Images
+// -------------------------
+// Rounded corners
+.img-rounded {
+	border-radius: @base-border-radius;
+}
+// Image thumbnails
+.img-thumbnail {
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid @base-border-color;
+	border-radius: @base-border-radius;
+}
+// Perfect circle
+.img-circle {
+	border-radius: 50%;
+}
+
+.img-rounded, .img-thumbnail, .img-circle {
+	margin-bottom: 1em;
+}

@@ -1,0 +1,385 @@
+// -----------------------------------------------------
+//	Here's where you can make this template your onw
+// -----------------------------------------------------
+
+// Global Swatches
+// -------------------------
+@brand-primary: 			#16a085; // Light - accent
+@brand-secondary: 			#333; // Dark - complement
+
+@brand-danger: 				#c0392b;
+@brand-success: 			#9bc23c;
+@brand-info: 				#37a0c2;
+@brand-warning: 			#FFBC46;
+
+@silver:					#e8e8e8; // Accent bakcground for some components (lighter)
+@grey:						#bdc3c7; // Accent background for some components (darker)
+
+@body-bg: 					#fff;
+@base-border-color:			darken(@silver, 20%); // generic border color for several components
+@base-border-radius:		0;
+@body-padding: 				0; // add padding when using .navbar-fixed-top
+
+// Typography
+// -------------------------
+
+// fonts
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
+
+// styles
+@base-font-family: 				"Helvetica Neue", Arial, Helvetica, sans-serif;
+@base-font-size:				15px;
+@base-line-height:				1.5;
+@base-font-weight:				normal;
+@text-color: 					#454C54;
+
+@headings-font-family: 			Enriqueta, Helvetica, Arial, sans-serif;
+@headings-font-weight:			bold;
+@headings-font-color: 			#2f353e;
+@headings-small-color:			@text-color;
+
+
+// social media brand colors
+// -------------------------
+@brand-facebook: #3b5998;
+@brand-twitter: #55acee;
+@brand-google-plus: #dd4b39;
+@brand-pinterest: #cb2027;
+@brand-linkedin: #007bb6;
+@brand-youtube: #bb0000;
+@brand-vimeo: #1ab7ea;
+@brand-tumblr: #32506d;
+@brand-instagram: #517fa4;
+@brand-flickr: #ff0084;
+@brand-dribbble: #ea4c89;
+@brand-foursquare: #0072b1;
+@brand-vk: #45668e;
+
+// States
+// -------------------------
+@state-success-bg:				#9FD757;
+@state-success-text:			#087830;
+@state-success-border:			darken(@state-success-bg, 5%);
+
+@state-info-bg:					#55BFE6;
+@state-info-text:				#17335b;
+@state-info-border:				darken(@state-info-bg, 5%);
+
+@state-warning-bg:				#FBEA86;
+@state-warning-text:			#cc5500;
+@state-warning-border:			darken(@state-warning-bg, 5%);
+
+@state-danger-bg:				#FCC8C8;
+@state-danger-text:				#dc143c;
+@state-danger-border:			darken(@state-danger-bg, 5%);
+
+
+// Navbar
+// -------------------------
+
+// Basics
+@navbar-height:						70px; // also adjust .navbar-brand padding-top if needed
+@navbar-link-padding:				@navbar-height / 4;
+@navbar-line-height:				@navbar-height / 2;
+@navbar-border-radius:				@base-border-radius;
+
+// Navbar Default
+@navbar-default-bg: 				#fff;
+@navbar-default-link: 				@text-color;
+@navbar-default-link-hover: 		darken(@text-color, 5%); 	// Hover
+@navbar-default-link-hover-bg: 		darken(@silver, 5%); 		// Hover
+@navbar-default-link-active: 		@brand-primary; 			// Active
+@navbar-default-link-active-bg:		darken(@silver, 5%);		// Active
+
+// Navbar Inverse
+@navbar-inverse-bg: 				@brand-secondary;
+@navbar-inverse-link: 				#fff;
+@navbar-inverse-link-hover: 		#fff; 						// Hover
+@navbar-inverse-link-hover-bg: 		darken(@brand-secondary, 5%); 	// Hover
+@navbar-inverse-link-active: 		@brand-primary; 				// Active
+@navbar-inverse-link-active-bg:		darken(@brand-secondary, 5%);	// Active
+
+// Navs Tabs
+// -------------------------
+@nav-tabs-content-bg:				#fff;
+@nav-tabs-border-color:				@base-border-color;
+@nav-tabs-border-radius:			@base-border-radius;
+
+@nav-tabs-link-color:				@link-color;
+@nav-tabs-link-bg:					transparent;
+
+@nav-tabs-link-hover-color:			@link-color;
+@nav-tabs-link-hover-bg:			darken(@silver, 5%);
+
+@nav-tabs-link-active-color:		@text-color;
+@nav-tabs-link-active-bg:			@nav-tabs-content-bg;
+
+// Navs Pills
+// -------------------------
+@nav-pills-link-color:				@link-color;
+@nav-pills-link-bg:					transparent;
+@nav-pills-border-radius:			@base-border-radius;
+
+@nav-pills-link-hover-color:		@link-color;
+@nav-pills-link-hover-bg:			darken(@silver, 5%);
+
+@nav-pills-link-active-color:		#fff;
+@nav-pills-link-active-bg:			@brand-primary;
+
+// Dropdowns
+// -------------------------
+@dropdown-bg:						@navbar-default-bg;
+@dropdown-link-color:				@navbar-default-link;
+@dropdown-link-hover-color:			#fff;
+@dropdown-link-hover-bg:			@brand-primary;
+@dropdown-link-active-color:		@navbar-default-link-active;
+@dropdown-link-active-bg:			@navbar-default-link-active-bg;
+@dropdown-link-disabled-color:		fade(@text-color, 50%);
+@dropdown-header-color:				@text-color;
+@dropdown-caret-color:				@link-color;
+@dropdown-border-radius:			@base-border-radius;
+
+// Text Links
+// -------------------------
+@link-color: 				@brand-primary;
+@link-color-hover: 			darken(@brand-primary, 10%);
+
+// Pre and Code
+// ------------------------
+@pre-bg:						@silver;
+@pre-font-family:				Monaco,Menlo,Consolas,"Courier New",monospace;
+@pre-border-radius:				@base-border-radius;
+
+// Forms
+// -------------------------
+@form-control-text-color:			@text-color;
+
+@form-control-border-color:			@base-border-color;
+@form-control-border-radius:		@base-border-radius;
+
+@form-control-focus-border-color: 	@brand-primary; // also applies to shadow
+@form-control-disabled-bg:			lighten(@silver, 5%);
+
+// Input group addons
+@input-group-addon-bg:				@silver;
+@input-group-addon-border-color:	@form-control-border-color;
+
+
+// Tables
+// -------------------------
+@table-bg:						#fff; // overall background-color
+@table-bg-accent:				@silver; // for striping
+@table-bg-hover:				darken(@silver, 5%);
+@table-bg-active:				@table-bg-hover;
+@table-border-color:			@base-border-color; // table and cell border
+
+// Wells
+// -------------------------
+@well-background:				@silver;
+@well-border-color:				@base-border-color;
+@well-border-radius:			@base-border-radius;
+
+// Turn buttons shadow ON/OFF
+// -------------------------
+@use-button-shadows: off;
+
+// Buttons
+// -------------------------
+@btn-radius:					@base-border-radius;
+@btn-default-bg:				@brand-secondary;
+@btn-primary-bg: 				@brand-primary;
+@btn-info-bg: 					@brand-info;
+@btn-success-bg: 				@brand-success;
+@btn-warning-bg: 				@brand-warning;
+@btn-danger-bg: 				@brand-danger;
+
+// Breadcrumbs
+// -------------------------
+@breadcrumb-bg:					transparent;
+@breadcrumb-border-radius:		@base-border-radius;
+@breadcrumb-color:				lighten(@text-color, 30%);
+@breadcrumb-active-color:		@text-color;
+
+// Pagination & Pager (same for both)
+// -------------------------
+@pagination-bg:					#fff;
+@pagination-border:				@base-border-color;
+@pagination-hover-bg:			@brand-primary;
+@pagination-active-bg:			@brand-primary;
+@pagination-active-color:		#fff;
+@pagination-disabled-color:		lighten(@text-color, 5%);
+@pagination-border-radius:		@base-border-radius;
+
+// Labels
+// -------------------------
+@label-default-bg:				#676e76;
+@label-primary-bg:				@brand-primary;
+@label-success-bg:				@brand-success;
+@label-info-bg:					@brand-info;
+@label-warning-bg:				@brand-warning;
+@label-danger-bg:				@brand-danger;
+@label-color:					#fff;
+@label-link-hover-color:		#fff;
+
+// Badges
+// -------------------------
+@badge-bg:						#676e76;
+@badge-color:					#fff;
+@badge-link-hover-color:		#fff;
+@badge-active-color:			@link-color;
+@badge-active-bg:				#fff;
+@badge-border-radius:			@base-border-radius;
+
+// Thumbnails
+// -------------------------
+@thumbnail-padding:				5px;
+@thumbnail-bg:					@body-bg;
+@thumbnail-border:				@base-border-color;
+@thumbnail-border-radius:		@border-radius-base;
+
+@thumbnail-caption-color:		@text-color;
+@thumbnail-caption-padding:		1em;
+
+// Alerts
+// -------------------------
+@alert-padding:					15px;
+@alert-border-radius:			@base-border-radius;
+@alert-link-font-weight:		bold;
+
+@alert-success-bg:				@state-success-bg;
+@alert-success-text:			@state-success-text;
+@alert-success-border:			@state-success-border;
+
+@alert-info-bg:					@state-info-bg;
+@alert-info-text:				@state-info-text;
+@alert-info-border:				@state-info-border;
+
+@alert-warning-bg:				@state-warning-bg;
+@alert-warning-text:			@state-warning-text;
+@alert-warning-border:			@state-warning-border;
+
+@alert-danger-bg:				@state-danger-bg;
+@alert-danger-text:				@state-danger-text;
+@alert-danger-border:			@state-danger-border;
+
+// Progress bars
+// -------------------------
+@progress-bg:					@grey;
+@progress-bar-height:			30px;
+@progress-bar-color:			#fff;
+@progress-bar-bg:				@brand-primary;
+@progress-bar-success-bg:		@brand-success;
+@progress-bar-warning-bg:		@brand-warning;
+@progress-bar-danger-bg:		@brand-danger;
+@progress-bar-info-bg:			@brand-info;
+
+// List groups
+// -------------------------
+@list-group-bg:					#fff;
+@list-group-border:				@base-border-color;
+@list-group-border-radius:		@base-border-radius;
+
+@list-group-hover-bg:			@silver;
+@list-group-active-color:		#fff;
+@list-group-active-bg:			@brand-secondary;
+@list-group-active-border:		@list-group-active-bg;
+
+@list-group-link-color:			@link-color;
+@list-group-link-heading-color:	@headings-font-color;
+
+// Panels
+// -------------------------
+@panel-bg:						#fff;
+@panel-border-color:			@base-border-color;
+@panel-border-radius:			@base-border-radius;
+
+@panel-default-text:			@text-color;
+@panel-default-border:			@base-border-color;
+@panel-default-heading-bg:		@silver;
+@panel-default-footer-bg:		@silver;
+
+@panel-secondary-text:			#fff;
+@panel-secondary-border:		@brand-secondary;
+@panel-secondary-heading-bg:	@brand-secondary;
+
+@panel-primary-text:			#fff;
+@panel-primary-border:			@brand-primary;
+@panel-primary-heading-bg:		@brand-primary;
+
+@panel-success-text:			#fff;
+@panel-success-border:			@brand-success;
+@panel-success-heading-bg:		@brand-success;
+
+@panel-info-text:				#fff;
+@panel-info-border:				@brand-info;
+@panel-info-heading-bg:			@brand-info;
+
+@panel-warning-text:			#fff;
+@panel-warning-border:			@brand-warning;
+@panel-warning-heading-bg:		@brand-warning;
+
+@panel-danger-text:				#fff;
+@panel-danger-border:			@brand-danger;
+@panel-danger-heading-bg:		@brand-danger;
+
+// Jumbotron
+// -------------------------
+@jumbotron-color:				inherit;
+@jumbotron-bg:					@silver;
+@jumbotron-heading-color:		@headings-font-color;
+
+// Modals
+// -------------------------
+@modal-inner-padding:			20px;
+@modal-title-padding:			15px;
+@modal-border-radius:			@base-border-radius;
+
+@modal-content-bg:				#fff;
+@modal-content-border-color: 	darken(@modal-backdrop-bg, 10%);
+
+@modal-backdrop-bg:				@brand-secondary;
+@modal-header-border-color:		#e5e5e5;
+@modal-footer-border-color:		@modal-header-border-color;
+
+// Popovers
+// -------------------------
+@popover-bg:					#fff;
+@popover-border-color:			@base-border-color;
+@popover-border-radius:			@base-border-radius;
+@popover-title-bg:				@silver;
+
+// Tooltips
+// -------------------------
+@tooltip-padding:				6px 9px;
+@tooltip-bg: 					#000;
+@border-radius-base: 			@base-border-radius;
+
+// Pricing tables
+// -------------------------
+@plan-border-radius:			@base-border-radius;
+@plan-border-color:				lighten(@base-border-color, 5%);
+@plan-body-bg:					#fff;
+
+@plan-default-header-bg:		@brand-secondary;
+@plan-default-description-text:	#fff;
+@plan-featured-bg:				@brand-primary;
+
+// Tags
+// -------------------------
+@tags-padding:					6px 12px;
+@tags-border-radius:			@base-border-radius;
+@tags-color:					#fff;
+@tags-bg:						lighten(@brand-secondary, 10%);
+@tags-active-bg:				@brand-primary;
+
+// Footer
+// -------------------------
+@footer-primary-bg: 			@brand-secondary;
+@footer-secondary-bg:			darken(@footer-primary-bg, 5%);
+
+@footer-heading-color: 			#fff;
+@footer-text-color: 			#e8e8e8;
+
+@footer-link-color:				@link-color;
+@footer-link-color-hover:		#fff;
+

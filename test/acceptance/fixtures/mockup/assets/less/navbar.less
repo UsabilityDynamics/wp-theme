@@ -1,0 +1,299 @@
+.navbar {
+	min-height: 1px;
+	margin-bottom: 0; // no margin is necessary since .wrapper-* have their own padding to account for this separation
+
+	.border-radius(@navbar-border-radius);
+	// discard border radius when navbar is static
+	&.navbar-static-top {
+		.border-radius(0);
+	}
+	&.navbar-fixed-top {
+		.border-radius(0);
+	}
+
+	.navbar-nav {
+		>li>a {
+			padding-top: @navbar-link-padding; // this also affects navbar height
+			padding-bottom: @navbar-link-padding; // this also affects navbar height
+			line-height: @navbar-line-height; // this also affects navbar height
+			font-weight: bold;
+		}
+	}
+	.navbar-toggle {
+		margin-top: 18px;
+	}
+}
+
+// Navbar Default
+// --------------------------------------------------
+.navbar-default {
+	background: @navbar-default-bg;
+	border: 1px solid darken(@navbar-default-bg, 10%);
+	// navigation ul
+	.navbar-nav {
+		>li>a {
+			color: @navbar-default-link;
+			&:hover, &:focus {
+				color: @navbar-default-link-hover;
+				background-color: darken(@navbar-default-bg, 5%);
+			}
+		}
+		// active link
+		>.active>a,
+		>.active>a:hover,
+		>.active>a:focus {
+			color: @navbar-default-link-active;
+			background-color: darken(@navbar-default-bg, 5%);;
+		}
+		// dropdown links
+		>.open>a,
+		>.open>a:hover,
+		>.open>a:focus {
+			color: @navbar-default-link-hover;
+			background-color: darken(@navbar-default-bg, 5%);
+		}
+		// caret
+		>.dropdown>a {
+			color: @navbar-default-link;
+			.caret,
+			&:hover .caret,
+			&:focus .caret {
+				border-top-color: @navbar-default-link-hover;
+				border-bottom-color: @navbar-default-link-hover;
+			}
+		}
+		// Dropdowns inside navbar default
+		@media (max-width: 767px) {
+			.open .dropdown-menu {
+				// links
+				>li>a {
+					color: @dropdown-link-color;
+					&:hover, &:focus {
+						color: @navbar-default-link-hover;
+						background: darken(@navbar-default-bg, 5%);
+					}
+				}
+				// disabled links
+				>.disabled>a {
+					&,
+					&:hover,
+					&:focus {
+						color: fade(@navbar-default-link, 50%);
+					}
+				}
+				.divider {
+					background-color: darken(@navbar-default-bg, 10%);
+					.box-shadow(0 1px 0 lighten(@navbar-default-bg, 10%))
+				}
+			}
+		}
+	}
+	.navbar-toggle {
+		background-color: darken(@navbar-default-bg, 5%);
+		border: 1px solid transparent;
+		&:hover, &:focus {
+			background-color: lighten(@navbar-default-bg, 5%);
+		}
+		.icon-bar {
+			background-color: darken(@navbar-default-bg, 20%);
+		}
+	}
+	.navbar-brand {
+		color: @headings-font-color;
+		&:hover, &:focus {
+			color: darken(@headings-font-color, 5%);
+		}
+	}
+	// navbar text and non navigation links
+	.navbar-text {
+		color: @text-color;
+	}
+	.navbar-link {
+		color: lighten(@text-color, 10%);
+		&:hover, &:focus {
+			color: darken(@text-color, 40%);
+		}
+	}
+	// divider shadows (when navbar is collapsed)
+	.navbar-collapse,
+	.navbar-form {
+		border-color: darken(@navbar-default-bg, 10%);
+		@shadow: inset 0 1px 0 lighten(@navbar-default-bg, 10%), 0 1px 0 lighten(@navbar-default-bg, 10%);
+		.box-shadow(@shadow);
+	}
+}
+
+// Navbar Inverse
+// --------------------------------------------------
+.navbar-inverse {
+	background: @navbar-inverse-bg;
+	border: 1px solid darken(@navbar-inverse-bg, 10%);
+	// navigation ul
+	.navbar-nav {
+		>li>a {
+			color: @navbar-inverse-link;
+			&:hover, &:focus {
+				color: @navbar-inverse-link-hover;
+				background-color: darken(@navbar-inverse-bg, 5%);
+			}
+		}
+		// active link
+		>.active>a,
+		>.active>a:hover,
+		>.active>a:focus {
+			color: @navbar-inverse-link-active;
+			background-color: darken(@navbar-inverse-bg, 5%);;
+		}
+		// dropdown links
+		>.open>a,
+		>.open>a:hover,
+		>.open>a:focus {
+			color: @navbar-inverse-link-hover;
+			background-color: darken(@navbar-inverse-bg, 5%);
+		}
+		// caret
+		>.dropdown>a {
+			color: @navbar-inverse-link;
+			.caret,
+			&:hover .caret,
+			&:focus .caret {
+				border-top-color: @navbar-inverse-link-hover;
+				border-bottom-color: @navbar-inverse-link-hover;
+			}
+		}
+		// Dropdowns inside navbar inverse
+		@media (max-width: 767px) {
+			.open .dropdown-menu {
+				// links
+				>li>a {
+					color: @dropdown-link-color;
+					&:hover, &:focus {
+						color: @navbar-inverse-link-hover;
+						background: darken(@navbar-inverse-bg, 5%);
+					}
+				}
+				// disabled links
+				>.disabled>a {
+					&,
+					&:hover,
+					&:focus {
+						color: fade(@navbar-inverse-link, 50%);
+					}
+				}
+				.divider {
+					background-color: darken(@navbar-inverse-bg, 10%);
+					.box-shadow(0 1px 0 lighten(@navbar-inverse-bg, 10%));
+				}
+			}
+		}
+	}
+	.navbar-toggle {
+		background-color: darken(@navbar-inverse-bg, 5%);
+		border: 1px solid transparent;
+		&:hover, &:focus {
+			background-color: lighten(@navbar-inverse-bg, 5%);
+		}
+		.icon-bar {
+			background-color: #ffffff;
+		}
+	}
+	.navbar-brand {
+		color: #fff;
+		&:hover, &:focus {
+			color: #eee;
+		}
+	}
+	// navbar text and non navigation links
+	.navbar-text {
+		color: @text-color;
+	}
+	.navbar-link {
+		color: lighten(@text-color, 10%);
+		&:hover, &:focus {
+			color: lighten(@text-color, 40%);
+		}
+	}
+	// divider shadows (when navbar is collapsed)
+	.navbar-collapse,
+	.navbar-form {
+		border-color: darken(@navbar-inverse-bg, 10%);
+		@shadow: inset 0 1px 0 lighten(@navbar-inverse-bg, 10%), 0 1px 0 lighten(@navbar-inverse-bg, 10%);
+		.box-shadow(@shadow);
+	}
+}
+
+// Add some aesthetics
+// --------------------------------------------------
+
+// make navbar-form fit (to link and logo size)
+.navbar-form {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+// discard navbar shadows (when above 1200px)
+@media (min-width: 1200px) {
+	.navbar-default, .navbar-inverse {
+		.navbar-collapse, .navbar-form {
+			.box-shadow(none);
+		}
+	}
+}
+
+// navbar plain text and non form btn
+.navbar-text {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+.navbar-btn {
+	margin: 18px 0;
+}
+
+// Brand
+// --------------------------------------------------
+.navbar-brand {
+	padding-top: 8px;
+	padding-bottom: 0;
+}
+
+// Dropdown menus (default, before navbar collapsing)
+// --------------------------------------------------
+.dropdown-menu {
+	background-color: @dropdown-bg;
+	border: 1px solid darken(@dropdown-bg, 10%);
+	.border-radius(@dropdown-border-radius);
+	.box-shadow(0 6px 12px fade(darken(@dropdown-bg, 80%), 20%));
+	>li>a {
+		color: @dropdown-link-color;
+		&:hover, &:focus {
+			color: @dropdown-link-hover-color;
+			background: @dropdown-link-hover-bg;
+		}
+	}
+	>.disabled {
+		>a,
+		>a:hover,
+		>a:focus {
+			color: @dropdown-link-disabled-color;
+		}
+	}
+	.divider {
+		background-color: darken(@dropdown-bg, 10%);
+		.box-shadow(0 1px 0 lighten(@dropdown-bg, 10%));
+	}
+}
+.dropdown-header {
+	color: @dropdown-header-color;
+}
+
+// Caret
+// --------------------------------------------------
+.caret,
+.dropdown .caret,
+.btn-default .caret,
+.dropup .btn-default .caret {
+	border-bottom-color: #fff; // bottom
+}
+.btn-default .caret {
+	border-top-color: #fff; // top
+}

@@ -1,0 +1,27 @@
+// Pager uses same variables as pagination
+
+.pager {
+	li {
+		> a,
+		> span {
+			.border-radius(@pagination-border-radius);
+			border: 1px solid @pagination-border;
+			background-color: @pagination-bg;
+		}
+		> a:hover,
+		> a:focus {
+			color: @pagination-active-color;
+			background-color: @pagination-hover-bg;
+			border-color: @pagination-hover-bg;
+		}
+	}
+	.disabled {
+		> a,
+		> a:hover,
+		> a:focus,
+		> span {
+			color: @pagination-disabled-color;
+			background-color: @pagination-bg;
+		}
+	}
+}
