@@ -98,7 +98,7 @@
   },
   "scripts": {
     "pre-install-cmd": [
-      "npm install",
+      "NODE_ENV=development npm install",
       "mkdir -p test/.tmp"
     ]
   },
